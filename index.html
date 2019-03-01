@@ -27,14 +27,14 @@
         background-color: #fff;
         height: 40px;
         margin: 0;
-        color: rgba(0,0,0,.5);
-        padding: 10px;
-        box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+        border-bottom: 2px solid rgba(0,0,0,.1);
         border-radius: 3px;
       }
-      .mapboxgl-popup {
-        max-width: 400px;
+      .filter-ctrl input[type=text]:focus {outline:0;}
+      .mapboxgl-popup-content {
+        border-radius: 10px;
       }
+
       .results {
         overflow-y: hidden;
         height: 30px;
@@ -47,18 +47,28 @@
       .filter {
         padding: 20px;
       }
+
+      .padding-left-0 {
+        padding-left: 0 !important;
+      }
+
+      .padding-right-0 {
+        padding-right: 0 !important;
+      }
     </style>
 
     <title>Hello, world!</title>
   </head>
   <body>
       <div class="container-fluid">
-          <div class="row title">
-            <h2>Cal Poly Class Locator - Spring 2019</h2>
-          </div>
           <div class="row filter">
-              <div class='filter-ctrl'>
-                  <input class="typeahead" id='filter-input' type='text' name='filter' placeholder='Filter by class' />
+              <div class="col padding-left-0">
+                <div class='filter-ctrl'>
+                    <input class="typeahead" id='filter-input' type='text' name='filter' placeholder='Filter by class, for example "POLS 112-01"' />
+                </div>
+              </div>
+              <div class="col-1 padding-left-0">
+                <button type="button" class="btn btn-light">Help</button>
               </div>
           </div>
           <div class="row">
@@ -78,11 +88,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" integrity="sha256-LOnFraxKlOhESwdU/dX+K0GArwymUDups0czPWLEg4E=" crossorigin="anonymous"></script>
 
     <script>
-      $.getJSON("/classLocator/geo.json",function(places){
+
+      function debounce(wait, func, immediate) {
+        var timeout;
+        return function() {
+          var context = this, args = arguments;
+          var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      };
+
+      function getName(feature) {
+        return feature.properties.department.trim() + " " + feature.properties.courseNumber.trim() + "-" + feature.properties.sectionNumber.trim() + ": " + feature.properties.courseName.trim();
+      }
+
+      function getDescription(feature) {
+        return "<b>" + getName(feature) + "</b></br>" + 
+               "Building: " + feature.properties.bldgName.trim() + "<br/>" +
+               "Room: " + feature.properties.room.trim(); 
+      }
+
+      $.getJSON("/geo.json",function(places){
 
         $(".typeahead").typeahead({
           source: places.features.map(function(feature){
-            return {id: feature.properties.name, name: feature.properties.name}
+            return {id: feature.properties.classNumber, name: getName(feature)}
           })
         });
 
@@ -96,7 +132,7 @@
           bearing: 80,
           zoom: 15
         });
-        map.loadImage("/classLocator/marker.png", function(error, image) {
+        map.loadImage("/marker.png", function(error, image) {
           map.addImage("custom-marker", image); 
           
           map.on('load', function () {
@@ -152,61 +188,70 @@
               }
             });
 
-            map.on('click', 'places', function (e) {
-              var coordinates = e.features[0].geometry.coordinates.slice();
-              var description = e.features[0].properties.description;
+            var lastPopup = null;
+            function showDescriptionPopup(feature) {
+              var coordinates = feature.geometry.coordinates.slice();
+              var description = getDescription(feature);
               
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
               // over the copy being pointed to.
-              while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-              coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+              // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+              // coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+              // }
+              if(lastPopup) {
+                lastPopup.remove();
               }
-              
-              new mapboxgl.Popup()
-              .setLngLat(coordinates)
-              .setHTML(description)
-              .addTo(map);
-              });
+              lastPopup = new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(description)
+                .addTo(map);
+            }
+
+            map.on('click', 'places', function (e) {
+              showDescriptionPopup(e.features[0]);
+            });
               
               // Change the cursor to a pointer when the mouse is over the places layer.
-              map.on('mouseenter', 'places', function () {
+            map.on('mouseenter', 'places', function () {
               map.getCanvas().style.cursor = 'pointer';
-              });
+            });
               
-              // Change it back to a pointer when it leaves.
-              map.on('mouseleave', 'places', function () {
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'places', function () {
               map.getCanvas().style.cursor = '';
             });
-
-            map.addControl(new mapboxgl.NavigationControl());
 
             map.on('click', 'places', function (e) {
               map.flyTo({center: e.features[0].geometry.coordinates});
             });
 
-            $("#filter-input").on('propertychange change click keyup input paste', function(e) {
+            $("#filter-input").on('change keyup input paste', debounce(250, function(e) {
               var value = e.target.value;
               
               // Filter visible features that don't match the input value.
               var filtered = places.features.filter(function(feature) {
-                var name = feature.properties.name;
-                return name.indexOf(value) > -1;
+                var name = getName(feature).toLocaleLowerCase();
+                return name.indexOf(value.toLocaleLowerCase()) > -1;
               });
               
               // Set the filter to populate features into the layer.
-              map.setFilter('places', ['match', ['get', 'name'], filtered.map(function(feature) {
-                return feature.properties.name;
+              map.setFilter('places', ['match', ['get', 'classNumber'], filtered.map(function(feature) {
+                return feature.properties.classNumber;
               }), true, false]);
 
-      
-                var bounds = new mapboxgl.LngLatBounds();
-                filtered.forEach(function(feature) {
-                    bounds.extend(feature.geometry.coordinates);
-                });
-                map.fitBounds(bounds, { maxZoom: 17, bearing: 80});
+              // Update map bounds
+              var bounds = new mapboxgl.LngLatBounds();
+              filtered.forEach(function(feature) {
+                bounds.extend(feature.geometry.coordinates);
+              });
+              map.fitBounds(bounds, { maxZoom: 17, bearing: 80});
+
+              if(filtered.length === 1) {
+                showDescriptionPopup(filtered[0]);
+              }
               
-            });
+            }));
           
           });
         });
