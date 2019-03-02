@@ -121,7 +121,7 @@
                "Room: " + feature.properties.room.trim(); 
       }
 
-      $.getJSON("/geo.json",function(places){
+      $.getJSON("geo.json",function(places){
 
         $(".typeahead").typeahead({
           source: places.features.map(function(feature){
@@ -136,11 +136,19 @@
           style: 'mapbox://styles/mapbox/light-v9',
           center: [-120.6625, 35.3050],
           pitch: 20,
-          bearing: 80,
           zoom: 15
         });
-        map.loadImage("/marker.png", function(error, image) {
+        map.loadImage("marker.png", function(error, image) {
           map.addImage("custom-marker", image); 
+          
+          map.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
+              enableHighAccuracy: true
+            },
+            trackUserLocation: true
+          }), "bottom-right" );
+          
+          map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
           
           map.on('load', function () {
 
@@ -252,7 +260,7 @@
               filtered.forEach(function(feature) {
                 bounds.extend(feature.geometry.coordinates);
               });
-              map.fitBounds(bounds, { maxZoom: 17, bearing: 80});
+              map.fitBounds(bounds, { maxZoom: 17});
 
               if(filtered.length === 1) {
                 showDescriptionPopup(filtered[0]);
