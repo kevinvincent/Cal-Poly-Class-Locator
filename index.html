@@ -56,13 +56,17 @@
         margin: 10px;
         width: calc(100% - 20px);
         box-shadow: 0 2px 2px rgba(0,0,0,0.19);
-        padding: 10px;
+        padding: 15px;
       }
       .selectize-dropdown {
         border: 0;
         margin: 0px 10px 0px 10px;
         width: calc(100% - 20px);
         box-shadow: 0 2px 2px rgba(0,0,0,0.19);
+      }
+
+      .selectize-dropdown-content > .option {
+        padding: 5px 15px 5px 15px;
       }
     </style>
 
@@ -239,7 +243,7 @@
           labelField: 'name',
           searchField: ['name'],
           maxOptions: 30,
-          onType: debounce(250, function(text) {
+          onType: debounce(500, function(text) {
 
               var filtered = this.currentResults.items.map(function(item){
                 return places.features[item.id]
