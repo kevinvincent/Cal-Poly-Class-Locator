@@ -15,6 +15,9 @@
     <!-- Selectize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
+
     <style>
       #map {
         position: absolute;
@@ -68,13 +71,20 @@
       .selectize-dropdown-content > .option {
         padding: 5px 15px 5px 15px;
       }
+
+      .animated {
+        -webkit-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
     </style>
 
     <title>Map | Cal Poly Apps</title>
   </head>
   <body>
     
-    <select class="input" id='filter-input' type='text' name='filter' placeholder='Try "POLS 334-01"'></select>
+    <select class="input" id='filter-input' type='text' name='filter' placeholder='Try "POLS 334-01"' autocomplete="off"></select>
     <div id='map'></div>
 
     <!-- Optional JavaScript -->
@@ -114,167 +124,244 @@
                "Room: " + feature.properties.room.trim(); 
       }
 
-      $.getJSON("geo.json",function(places){
+      $.getJSON("geo.json",function(sections){
+        $.getJSON("buildings.json",function(buildings){
 
-        mapboxgl.accessToken = 'pk.eyJ1Ijoia2V2aW5zdW5kYXIiLCJhIjoiY2lmNjF6aGdmMDM1MDdzbHVpcThyZjF4YyJ9.1NKie7hjfYG3dNPYLhRizA';
-    
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/light-v9',
-          center: [-120.6625, 35.3050],
-          pitch: 20,
-          zoom: 15
-        });
+          mapboxgl.accessToken = 'pk.eyJ1Ijoia2V2aW5zdW5kYXIiLCJhIjoiY2lmNjF6aGdmMDM1MDdzbHVpcThyZjF4YyJ9.1NKie7hjfYG3dNPYLhRizA';
+      
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-120.6625, 35.3050],
+            pitch: 20,
+            zoom: 15
+          });
 
-        map.loadImage("marker.png", function(error, image) {
-          map.addImage("custom-marker", image); 
-          
-          map.addControl(new mapboxgl.GeolocateControl({
-            positionOptions: {
-              enableHighAccuracy: true
-            },
-            trackUserLocation: true
-          }), "bottom-right" );
-          
-          map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
-          
-          map.on('load', function () {
-
-            // Insert the layer beneath any symbol layer.
-            var layers = map.getStyle().layers;
+          map.loadImage("marker.png", function(error, image) {
+            map.addImage("custom-marker", image); 
             
-            var labelLayerId;
-            for (var i = 0; i < layers.length; i++) {
-              if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-                labelLayerId = layers[i].id;
-                break;
-              }
-            }
-              
-            map.addLayer({
-              'id': '3d-buildings',
-              'source': 'composite',
-              'source-layer': 'building',
-              'filter': ['==', 'extrude', 'true'],
-              'type': 'fill-extrusion',
-              'minzoom': 15,
-              'paint': {
-              'fill-extrusion-color': '#aaa',
-                
-              // use an 'interpolate' expression to add a smooth transition effect to the
-              // buildings as the user zooms in
-              'fill-extrusion-height': [
-              "interpolate", ["linear"], ["zoom"],
-              15, 0,
-              15.05, ["get", "height"]
-              ],
-              'fill-extrusion-base': [
-              "interpolate", ["linear"], ["zoom"],
-              15, 0,
-              15.05, ["get", "min_height"]
-              ],
-              'fill-extrusion-opacity': .6
-              }
-            }, labelLayerId);
-
-            map.addLayer({
-              "id": "places",
-              "type": "symbol",
-              "interactive": true,
-              "source": {
-                "type": "geojson",
-                "data": places
+            map.addControl(new mapboxgl.GeolocateControl({
+              positionOptions: {
+                enableHighAccuracy: true
               },
-              "layout": {
-                "icon-image": "custom-marker",
-                "icon-allow-overlap": true
+              trackUserLocation: true
+            }), "bottom-right" );
+            
+            map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+            
+            map.on('load', function () {
+
+              // Insert the layer beneath any symbol layer.
+              var layers = map.getStyle().layers;
+              
+              var labelLayerId;
+              for (var i = 0; i < layers.length; i++) {
+                if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                  labelLayerId = layers[i].id;
+                  break;
+                }
               }
-            });
+                
+              map.addLayer({
+                'id': '3d-buildings',
+                'source': 'composite',
+                'source-layer': 'building',
+                'filter': ['==', 'extrude', 'true'],
+                'type': 'fill-extrusion',
+                'minzoom': 15,
+                'paint': {
+                'fill-extrusion-color': '#aaa',
+                  
+                // use an 'interpolate' expression to add a smooth transition effect to the
+                // buildings as the user zooms in
+                'fill-extrusion-height': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 0,
+                15.05, ["get", "height"]
+                ],
+                'fill-extrusion-base': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 0,
+                15.05, ["get", "min_height"]
+                ],
+                'fill-extrusion-opacity': .6
+                }
+              }, labelLayerId);
 
-            var lastPopup = null;
-            function showDescriptionPopup(feature) {
-              var coordinates = feature.geometry.coordinates.slice();
-              var description = getDescription(feature);
-              
-              // Ensure that if the map is zoomed out such that multiple
-              // copies of the feature are visible, the popup appears
-              // over the copy being pointed to.
-              // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-              // coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-              // }
-              if(lastPopup) {
-                lastPopup.remove();
-              }
-              lastPopup = new mapboxgl.Popup({offset: [0, -10]})
-                .setLngLat(coordinates)
-                .setHTML(description)
-                .addTo(map);
-            }
-
-            map.on('click', 'places', function (e) {
-              showDescriptionPopup(e.features[0]);
-            });
-              
-              // Change the cursor to a pointer when the mouse is over the places layer.
-            map.on('mouseenter', 'places', function () {
-              map.getCanvas().style.cursor = 'pointer';
-            });
-              
-            // Change it back to a pointer when it leaves.
-            map.on('mouseleave', 'places', function () {
-              map.getCanvas().style.cursor = '';
-            });
-
-            map.on('click', 'places', function (e) {
-              map.flyTo({center: e.features[0].geometry.coordinates});
-            });
-
-            var selectData = $.map(places.features, function (obj, index) {
-          return {
-            name: getName(obj),
-            description: getDescription(obj),
-            id: index
-          }
-        });
-
-        var selectize = $('#filter-input').selectize({
-          options: selectData,
-          valueField: 'id',
-          labelField: 'name',
-          searchField: ['name'],
-          maxOptions: 30,
-          onType: debounce(500, function(text) {
-
-              var filtered = this.currentResults.items.map(function(item){
-                return places.features[item.id]
+              map.addLayer({
+                "id": "sections",
+                "type": "symbol",
+                "interactive": true,
+                "source": {
+                  "type": "geojson",
+                  "data": sections
+                },
+                "layout": {
+                  "icon-image": "custom-marker",
+                  "icon-allow-overlap": true
+                }
               });
 
-              // Set the filter to populate features into the layer.
-              map.setFilter('places', ['match', ['get', 'classNumber'], filtered.map(function(feature) {
-                return feature.properties.classNumber;
-              }), true, false]);
-
-              // Update map bounds
-              var bounds = new mapboxgl.LngLatBounds();
-              filtered.forEach(function(feature) {
-                bounds.extend(feature.geometry.coordinates);
+              map.addLayer({
+                "id": "buildings",
+                "type": "symbol",
+                "interactive": true,
+                "source": {
+                  "type": "geojson",
+                  "data": buildings
+                },
+                "layout": {
+                  "icon-image": "custom-marker",
+                  "icon-allow-overlap": true
+                }
               });
-              map.fitBounds(bounds, { maxZoom: 17, padding: 100});
 
-              if(filtered.length === 1) {
-                showDescriptionPopup(filtered[0]);
+              var lastPopup = null;
+              function showDescriptionPopup(feature) {
+                var coordinates = feature.geometry.coordinates.slice();
+                var description = getDescription(feature);
+                
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                // coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                // }
+                if(lastPopup) {
+                  lastPopup.remove();
+                }
+                lastPopup = new mapboxgl.Popup({offset: [0, -10], className: "animated fadeIn"})
+                  .setLngLat(coordinates)
+                  .setHTML(description)
+                  .addTo(map);
               }
-          }),
-          onChange: function(value) {
-            var selected = places.features[this.currentResults.items[value].id]
-            var bounds = new mapboxgl.LngLatBounds();
-            bounds.extend(selected.geometry.coordinates);
-            map.setFilter('places', ['==', ['get', 'classNumber'], selected.properties.classNumber]);
-            map.fitBounds(bounds, { maxZoom: 17 });
-            showDescriptionPopup(selected);
-          }
-        });
-          
+
+              function displayFilteredMap(filtered) {
+                // Set the filter to populate features into the layer.
+                var classNumberFilter = filtered.sections.map(function(feature) {
+                  return feature.properties.classNumber;
+                });
+                map.setFilter('sections', ['match', ['get', 'classNumber'], classNumberFilter.length != 0 ? classNumberFilter : ["NULL"],true, false]);
+
+                // Set the filter to populate features into the layer.
+                var buildingRefFilter = filtered.buildings.map(function(feature) {
+                  return feature.properties.ref;
+                });
+                map.setFilter('buildings', ['match', ['get', 'ref'], buildingRefFilter.length != 0 ? buildingRefFilter : ["NULL"], true, false]);
+
+                // Update map bounds
+                var bounds = new mapboxgl.LngLatBounds();
+                filtered.sections.forEach(function(feature) {
+                  bounds.extend(feature.geometry.coordinates);
+                });
+                filtered.buildings.forEach(function(feature) {
+                  bounds.extend(feature.geometry.coordinates);
+                });
+
+                if(lastPopup) {
+                  lastPopup.remove();
+                }
+                map.fitBounds(bounds, { maxZoom: 17, padding: 100});
+
+                if(filtered.length === 1) {
+                  map.on('moveend', function(e){
+                    showDescriptionPopup(filtered[0]);
+                  });
+                }
+              }
+
+              map.on('click', 'sections', function (e) {
+                showDescriptionPopup(e.features[0]);
+              });
+                
+                // Change the cursor to a pointer when the mouse is over the sections layer.
+              map.on('mouseenter', 'sections', function () {
+                map.getCanvas().style.cursor = 'pointer';
+              });
+                
+              // Change it back to a pointer when it leaves.
+              map.on('mouseleave', 'sections', function () {
+                map.getCanvas().style.cursor = '';
+              });
+
+              map.on('click', 'sections', function (e) {
+                map.flyTo({center: e.features[0].geometry.coordinates});
+              });
+
+              var selectData = $.map(sections.features, function (obj, index) {
+                return {
+                  type: "sections",
+                  name: getName(obj),
+                  id: "sections-"+index
+                }
+              });
+
+              selectData = selectData.concat($.map(buildings.features, function (obj, index) {
+                return {
+                  type: "buildings",
+                  name: obj.properties.ref_en + ": " + obj.properties.name,
+                  id: "buildings-"+index
+                }
+              }))
+
+              var selectize = $('#filter-input').selectize({
+                options: selectData,
+                optgroups: [
+                  {$order: 2, type: 'sections', name: 'Sections'},
+                  {$order: 1, type: 'buildings', name: 'Buildings'}
+                ],
+                valueField: 'id',
+                labelField: 'name',
+                searchField: ['name'],
+                optgroupField: 'type',
+                optgroupLabelField: 'name',
+                optgroupValueField: 'type',
+                render: {
+                  optgroup_header: function(data, escape) {
+                    return '<div class="optgroup-header">' + escape(data.name) + '</div>';
+                  }
+                },
+                maxOptions: 30,
+                onType: debounce(500, function(text) {
+
+                  var filtered = {
+                    "buildings" : [],
+                    "sections" : []
+                  }
+
+                  this.currentResults.items.forEach(function(item){
+                    var type = item.id.split("-")[0];
+                    var index = parseInt(item.id.split("-")[1]);
+                    if(type === "buildings") {
+                      filtered.buildings.push(buildings.features[index]);
+                    } else if (type === "sections") {
+                      filtered.sections.push(sections.features[index]);
+                    }
+                  });
+
+                  displayFilteredMap(filtered);
+                   
+                }),
+                onChange: function(id) {
+                  
+                  var filtered = {
+                    "buildings" : [],
+                    "sections" : []
+                  }
+
+                  var type = id.split("-")[0];
+                  var index = parseInt(id.split("-")[1]);
+                  if(type === "buildings") {
+                    filtered.buildings.push(buildings.features[index]);
+                  } else if (type === "sections") {
+                    filtered.sections.push(sections.features[index]);
+                  }
+
+                  displayFilteredMap(filtered)
+                }
+              });
+            
+            });
           });
         });
       });

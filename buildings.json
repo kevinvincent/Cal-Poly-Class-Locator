@@ -1,0 +1,849 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"bldg-114-J","properties":{"name":"Yosemite Hall Tower 8","ref":"114J","id":"bldg-114-J","ref_en":"114J","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653077,35.297469]}}
+,
+{"type":"Feature","id":"bldg-171-C","properties":{"name":"Corralitos","ref":"171C","id":"bldg-171-C","ref_en":"171C","short_name":"Corralitos","scalerank":"4","building:levels":"5","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65946,35.308098]}}
+,
+{"type":"Feature","id":"bldg-128-D","properties":{"name":"West Field Storage","ref":"128D","id":"bldg-128-D","ref_en":"128D","scalerank":"4","building:levels":"1","start_date":"1962-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.669628,35.297943]}}
+,
+{"type":"Feature","id":"bldg-211-A","properties":{"name":"Shepard Reservoir Equipment Shed","ref":"211A","id":"bldg-211-A","ref_en":"211A","scalerank":"4","start_date":"1965","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.666674,35.309681]}}
+,
+{"type":"Feature","id":"bldg-004-D","properties":{"name":"Aero Jet Engine Test Facility","ref":"004D","id":"bldg-004-D","ref_en":"04D","scalerank":"4","building:levels":"1","start_date":"1956","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665202,35.305628]}}
+,
+{"type":"Feature","id":"bldg-003-0","properties":{"name":"Business","ref":"0030","id":"bldg-003-0","ref_en":"03","short_name":"Business","scalerank":"3","building:levels":"4","start_date":"1993-2","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665003,35.299912]}}
+,
+{"type":"Feature","id":"bldg-172-D","properties":{"name":"tšɨłkukunɨtš","ref":"172D","id":"bldg-172-D","ref_en":"172D","short_name":"tkk","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653672,35.296918]}}
+,
+{"type":"Feature","id":"bldg-197-0","properties":{"name":"Bonderson Engineering Project Center","ref":"1970","id":"bldg-197-0","ref_en":"197","short_name":"Bonderson Ctr","scalerank":"3","building:levels":"2","start_date":"2006-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664227,35.30245]}}
+,
+{"type":"Feature","id":"bldg-153-B","properties":{"name":"489 Paseo Bella Montana","ref":"153B","id":"bldg-153-B","ref_en":"153B","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675152,35.298234]}}
+,
+{"type":"Feature","id":"bldg-061-G","properties":{"name":"Richard J. O'Neill Green","ref":"061G","id":"bldg-061-G","ref_en":"61G","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.665655,35.299733]}}
+,
+{"type":"Feature","id":"bldg-056-U","properties":{"name":"Swine Unit East Pond","ref":"056U","id":"bldg-056-U","ref_en":"56U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.671822,35.310876]}}
+,
+{"type":"Feature","id":"bldg-114-0","properties":{"name":"Yosemite Hall","ref":"1140","id":"bldg-114-0","ref_en":"114","short_name":"Yosemite","scalerank":"2","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653725,35.297719]}}
+,
+{"type":"Feature","id":"bldg-018-E","properties":{"name":"Dairy Science Bull Barn","ref":"018E","id":"bldg-018-E","ref_en":"18E","scalerank":"4","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671502,35.306381]}}
+,
+{"type":"Feature","id":"bldg-077-T","properties":{"name":"Rodeo Modular Office","ref":"077T","id":"bldg-077-T","ref_en":"77T","scalerank":"4","start_date":"2011","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.670518,35.308559]}}
+,
+{"type":"Feature","id":"bldg-095-C","properties":{"name":"Shell House","ref":"095C","id":"bldg-095-C","ref_en":"95C","scalerank":"4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.653972,35.315423]}}
+,
+{"type":"Feature","id":"bldg-121-T","properties":{"name":"Cheda Ranch Feed Storage","ref":"121T","id":"bldg-121-T","ref_en":"121T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.683012,35.313533]}}
+,
+{"type":"Feature","id":"bldg-056-H","properties":{"name":"Swine Unit South Pens","ref":"056H","id":"bldg-056-H","ref_en":"56H","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.673339,35.311432]}}
+,
+{"type":"Feature","id":"bldg-122-T","properties":{"name":"Parker Barn","ref":"122T","id":"bldg-122-T","ref_en":"122T","scalerank":"4","building:levels":"1","start_date":"1929","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678523,35.307952]}}
+,
+{"type":"Feature","id":"bldg-153-U","properties":{"name":"511 Paseo Bella Montana","ref":"153U","id":"bldg-153-U","ref_en":"153U","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.674771,35.298686]}}
+,
+{"type":"Feature","id":"bldg-052-B","properties":{"name":"Science Observatory","ref":"052B","id":"bldg-052-B","ref_en":"52B","scalerank":"4","building:levels":"1","start_date":"1970","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65999,35.300477]}}
+,
+{"type":"Feature","id":"bldg-150-S","properties":{"name":"PSIC Silos B","ref":"150S","id":"bldg-150-S","ref_en":"150S","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679953,35.311269]}}
+,
+{"type":"Feature","id":"bldg-048-A","properties":{"name":"EHS Residence","ref":"048A","id":"bldg-048-A","ref_en":"48A","scalerank":"4","building:levels":"1","start_date":"1938","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663868,35.309006]}}
+,
+{"type":"Feature","id":"bldg-150-P","properties":{"name":"PSIC Silos F","ref":"150P","id":"bldg-150-P","ref_en":"150P","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679097,35.311107]}}
+,
+{"type":"Feature","id":"bldg-122-A","properties":{"name":"Parker Equipment Storage","ref":"122A","id":"bldg-122-A","ref_en":"122A","scalerank":"4","building:levels":"1","start_date":"1978","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678291,35.306985]}}
+,
+{"type":"Feature","id":"bldg-172-C","properties":{"name":"tiłhini","ref":"172C","id":"bldg-172-C","ref_en":"172C","short_name":"thn","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654241,35.297027]}}
+,
+{"type":"Feature","id":"bldg-015-0","properties":{"name":"Cal Poly Corporation Administration","ref":"0150","id":"bldg-015-0","ref_en":"15","short_name":"Corp Admin","scalerank":"3","building:levels":"1","start_date":"1989-6","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.660239,35.30318]}}
+,
+{"type":"Feature","id":"bldg-017-H","properties":{"name":"Crop Science East Greenhouse","ref":"017H","id":"bldg-017-H","ref_en":"17H","scalerank":"4","building:levels":"1","start_date":"2007-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.669154,35.302468]}}
+,
+{"type":"Feature","id":"bldg-171-E","properties":{"name":"Estrella","ref":"171E","id":"bldg-171-E","ref_en":"171E","short_name":"Estrella","scalerank":"4","building:levels":"6","start_date":"2009-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.659458,35.308968]}}
+,
+{"type":"Feature","id":"bldg-048-L","properties":{"name":"EHS Greenhouse","ref":"048L","id":"bldg-048-L","ref_en":"48L","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662453,35.308915]}}
+,
+{"type":"Feature","id":"bldg-042-R","properties":{"name":"Mott Physical Education Basketball Courts","ref":"042R","id":"bldg-042-R","ref_en":"42R","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.65841,35.298227]}}
+,
+{"type":"Feature","id":"bldg-170-E","properties":{"name":"Cerro Bishop","ref":"170E","id":"bldg-170-E","ref_en":"170E","short_name":"Bishop","scalerank":"4","building:levels":"5","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.656702,35.305275]}}
+,
+{"type":"Feature","id":"bldg-080-0","properties":{"name":"Environmental Health & Safety","ref":"0800","id":"bldg-080-0","ref_en":"80","short_name":"Housing / EHS","alt_name":"Risk Management / Housing Warehouse","scalerank":"3","building:levels":"1","start_date":"1951","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660786,35.303522]}}
+,
+{"type":"Feature","id":"bldg-163-0","properties":{"name":"Sports Complex Lower Fields","ref":"1630","id":"bldg-163-0","ref_en":"163","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.666242,35.304767]}}
+,
+{"type":"Feature","id":"bldg-056-F","properties":{"name":"Swine Unit Gilt Gestation Shed","ref":"056F","id":"bldg-056-F","ref_en":"56F","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.673634,35.311947]}}
+,
+{"type":"Feature","id":"bldg-170-C","properties":{"name":"Cerro Hollister","ref":"170C","id":"bldg-170-C","ref_en":"170C","short_name":"Hollister","scalerank":"4","building:levels":"7","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65728,35.304849]}}
+,
+{"type":"Feature","id":"bldg-101-0","properties":{"name":"Diablo Hall","ref":"1010","id":"bldg-101-0","ref_en":"101","short_name":"Diablo","scalerank":"3","building:levels":"2","start_date":"1953-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.658217,35.30311]}}
+,
+{"type":"Feature","id":"bldg-114-F","properties":{"name":"Yosemite Hall Tower 5","ref":"114F","id":"bldg-114-F","ref_en":"114F","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653361,35.297879]}}
+,
+{"type":"Feature","id":"bldg-055-T","properties":{"name":"Beef Cattle Evaluation Center Pond","ref":"055T","id":"bldg-055-T","ref_en":"55T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.678907,35.308759]}}
+,
+{"type":"Feature","id":"bldg-122-0","properties":{"name":"Parker Ranch","ref":"1220","id":"bldg-122-0","ref_en":"122","short_name":"Parker Ranch","scalerank":"2","building:levels":"2","start_date":"1929","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678673,35.306749]}}
+,
+{"type":"Feature","id":"bldg-082-0","properties":{"name":"Corporation Warehouse","ref":"0820","id":"bldg-082-0","ref_en":"82","short_name":"Corp Warehouse","scalerank":"3","building:levels":"1","start_date":"1989-8","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.670981,35.30521]}}
+,
+{"type":"Feature","id":"bldg-121-0","properties":{"name":"Cheda Ranch","ref":"1210","id":"bldg-121-0","ref_en":"121","alt_name":"Sheep Unit, Cheda Ranch","scalerank":"2","building:levels":"2","start_date":"1951","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683634,35.311773]}}
+,
+{"type":"Feature","id":"bldg-018-G","properties":{"name":"Dairy Science Cow Shelter","ref":"018G","id":"bldg-018-G","ref_en":"18G","scalerank":"4","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671881,35.306773]}}
+,
+{"type":"Feature","id":"bldg-113-B","properties":{"name":"Sierra Madre Hall Tower 1","ref":"113B","id":"bldg-113-B","ref_en":"113B","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654926,35.299402]}}
+,
+{"type":"Feature","id":"bldg-121-B","properties":{"name":"Cheda Ranch Santa Ynez","ref":"121B","id":"bldg-121-B","ref_en":"121B","scalerank":"4","building:levels":"1","start_date":"1938","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683258,35.311944]}}
+,
+{"type":"Feature","id":"bldg-028-0","properties":{"name":"Albert B. Smith Alumni and Conference Center","ref":"0280","id":"bldg-028-0","ref_en":"28","short_name":"Smith Alumni Ctr","scalerank":"2","building:levels":"1","start_date":"1959-7","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662175,35.297558]}}
+,
+{"type":"Feature","id":"bldg-004-A","properties":{"name":"Aero Hangar","ref":"004A","id":"bldg-004-A","ref_en":"04A","scalerank":"4","building:levels":"2","start_date":"1947-7","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664735,35.305594]}}
+,
+{"type":"Feature","id":"bldg-018-U","properties":{"name":"Dairy Science Pond","ref":"018U","id":"bldg-018-U","ref_en":"18U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.674509,35.306743]}}
+,
+{"type":"Feature","id":"bldg-071-0","properties":{"name":"Transportation Services","ref":"0710","id":"bldg-071-0","ref_en":"71","short_name":"Transportation","scalerank":"3","building:levels":"2","start_date":"1961-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658682,35.30404]}}
+,
+{"type":"Feature","id":"bldg-007-0","properties":{"name":"Advanced Technology Laboratories","ref":"0070","id":"bldg-007-0","ref_en":"07","short_name":"Advanced Tech Labs","scalerank":"3","building:levels":"1","start_date":"1999-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665184,35.302151]}}
+,
+{"type":"Feature","id":"bldg-114-C","properties":{"name":"Yosemite Hall Tower 2","ref":"114C","id":"bldg-114-C","ref_en":"114C","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653719,35.298328]}}
+,
+{"type":"Feature","id":"bldg-057-0","properties":{"name":"Veterinary Hospital","ref":"0570","id":"bldg-057-0","ref_en":"57","short_name":"Vet Hospital","scalerank":"2","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.670381,35.3059]}}
+,
+{"type":"Feature","id":"bldg-150-M","properties":{"name":"PSIC Manure Pits","ref":"150M","id":"bldg-150-M","ref_en":"150M","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679187,35.310803]}}
+,
+{"type":"Feature","id":"bldg-008-U","properties":{"name":"Agricultural Engineering South Storage","ref":"008U","id":"bldg-008-U","ref_en":"08U","scalerank":"4","building:levels":"1","start_date":"1954-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661905,35.303549]}}
+,
+{"type":"Feature","id":"bldg-092-A","properties":{"name":"Poly Grove Restroom","ref":"092A","id":"bldg-092-A","ref_en":"92A","scalerank":"4","building:levels":"1","start_date":"2006-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665991,35.301184]}}
+,
+{"type":"Feature","id":"bldg-114-D","properties":{"name":"Yosemite Hall Tower 3","ref":"114D","id":"bldg-114-D","ref_en":"114D","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653463,35.298297]}}
+,
+{"type":"Feature","id":"bldg-127-E","properties":{"name":"Escuela Beef Center Work-up","ref":"127E","id":"bldg-127-E","ref_en":"127E","scalerank":"4","start_date":"2006-1-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.723476,35.347206]}}
+,
+{"type":"Feature","id":"bldg-137-E","properties":{"name":"Student Experimental Farm Greenhouse","ref":"137E","id":"bldg-137-E","ref_en":"137E","scalerank":"4","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673638,35.310149]}}
+,
+{"type":"Feature","id":"bldg-058-A","properties":{"name":"Welding Annex","ref":"058A","id":"bldg-058-A","ref_en":"58A","scalerank":"4","building:levels":"1","start_date":"1989-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661216,35.303524]}}
+,
+{"type":"Feature","id":"bldg-113-C","properties":{"name":"Sierra Madre Hall Tower 2","ref":"113C","id":"bldg-113-C","ref_en":"113C","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654666,35.299126]}}
+,
+{"type":"Feature","id":"bldg-150-Q","properties":{"name":"PSIC Silos E","ref":"150Q","id":"bldg-150-Q","ref_en":"150Q","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679521,35.310956]}}
+,
+{"type":"Feature","id":"bldg-048-0","properties":{"name":"Environmental Horticultural Science","ref":"0480","id":"bldg-048-0","ref_en":"48","short_name":"EHS","scalerank":"3","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663566,35.309187]}}
+,
+{"type":"Feature","id":"bldg-150-R","properties":{"name":"PSIC Silos C","ref":"150R","id":"bldg-150-R","ref_en":"150R","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679858,35.31126]}}
+,
+{"type":"Feature","id":"bldg-032-E","properties":{"name":"Equine Center Stallion Barn","ref":"032E","id":"bldg-032-E","ref_en":"32E","scalerank":"4","building:levels":"1","start_date":"1940-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664127,35.309597]}}
+,
+{"type":"Feature","id":"bldg-036-0","properties":{"name":"University Police","ref":"0360","id":"bldg-036-0","ref_en":"36","short_name":"Police","alt_name":"Police Station","scalerank":"3","building:levels":"2","start_date":"1941-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661744,35.303924]}}
+,
+{"type":"Feature","id":"bldg-127-H","properties":{"name":"Escuela Ranch Pumphouse","ref":"127H","id":"bldg-127-H","ref_en":"127H","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.722195,35.351866]}}
+,
+{"type":"Feature","id":"bldg-137-B","properties":{"name":"Student Experimental Farm Equipment Storage","ref":"137B","id":"bldg-137-B","ref_en":"137B","scalerank":"4","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.674789,35.310539]}}
+,
+{"type":"Feature","id":"bldg-032-C","properties":{"name":"Equine Center Breeding Barn","ref":"032C","id":"bldg-032-C","ref_en":"32C","scalerank":"4","building:levels":"1","start_date":"1940-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664596,35.309784]}}
+,
+{"type":"Feature","id":"bldg-153-K","properties":{"name":"516 Paseo Bella Montana","ref":"153K","id":"bldg-153-K","ref_en":"153K","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.67506,35.29859]}}
+,
+{"type":"Feature","id":"bldg-046-0","properties":{"name":"Old Natatorium","ref":"0460","id":"bldg-046-0","ref_en":"46","short_name":"Natatorium","alt_name":"Natiorium, Old","scalerank":"3","building:levels":"1","start_date":"1938-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664171,35.298995]}}
+,
+{"type":"Feature","id":"bldg-076-0","properties":{"name":"Old Power House","ref":"0760","id":"bldg-076-0","ref_en":"76","short_name":"Old Power Plant","scalerank":"3","building:levels":"1","start_date":"1908","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663615,35.299063]}}
+,
+{"type":"Feature","id":"bldg-171-I","properties":{"name":"Inyo","ref":"171I","id":"bldg-171-I","ref_en":"171I","short_name":"Inyo","alt_name":"Einstein Bros Bagels","scalerank":"4","building:levels":"5","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65877,35.307571]}}
+,
+{"type":"Feature","id":"bldg-187-0","properties":{"name":"Simpson Strong-Tie Material Demonstration Lab","ref":"1870","id":"bldg-187-0","ref_en":"187","short_name":"Simpson Lab","scalerank":"4","building:levels":"2","start_date":"2010-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66261,35.299442]}}
+,
+{"type":"Feature","id":"bldg-038-0","properties":{"name":"Mathematics and Science","ref":"0380","id":"bldg-038-0","ref_en":"38","short_name":"Math and Science","alt_name":"Child Development Lab","scalerank":"3","building:levels":"2","start_date":"1959-7","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662253,35.301569]}}
+,
+{"type":"Feature","id":"bldg-230-A","properties":{"name":"Brizzolara Creek Fish Ladder","ref":"230A","id":"bldg-230-A","ref_en":"230A","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.666642,35.302926]}}
+,
+{"type":"Feature","id":"bldg-134-0","properties":{"name":"Visitor Information","ref":"1340","id":"bldg-134-0","ref_en":"134","short_name":"Visitor Info","scalerank":"2","building:levels":"1","start_date":"1988-12","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.652978,35.296315]}}
+,
+{"type":"Feature","id":"bldg-056-B","properties":{"name":"Swine Unit Addition","ref":"056B","id":"bldg-056-B","ref_en":"56B","scalerank":"4","building:levels":"1","start_date":"1985","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672414,35.311968]}}
+,
+{"type":"Feature","id":"bldg-018-Q","properties":{"name":"Dairy Science South Pond","ref":"018Q","id":"bldg-018-Q","ref_en":"18Q","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.670286,35.307115]}}
+,
+{"type":"Feature","id":"bldg-046-T","properties":{"name":"Natatorium Faculty Offices","ref":"046T","id":"bldg-046-T","ref_en":"46T","scalerank":"4","building:levels":"1","start_date":"2001-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663933,35.298931]}}
+,
+{"type":"Feature","id":"bldg-172-G","properties":{"name":"tsɨtpxatu","ref":"172G","id":"bldg-172-G","ref_en":"172G","short_name":"tpx","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65523,35.296775]}}
+,
+{"type":"Feature","id":"bldg-018-H","properties":{"name":"Dairy Science Hospital Barn","ref":"018H","id":"bldg-018-H","ref_en":"18H","scalerank":"4","building:levels":"1","start_date":"1992-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673547,35.307364]}}
+,
+{"type":"Feature","id":"bldg-303-0","properties":{"name":"Poly Canyon Botanical Gardens","ref":"3030","id":"bldg-303-0","ref_en":"303","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.651854,35.312062]}}
+,
+{"type":"Feature","id":"bldg-042-S","properties":{"name":"Mott Physical Education Tennis Courts","ref":"042S","id":"bldg-042-S","ref_en":"42S","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.658361,35.297722]}}
+,
+{"type":"Feature","id":"bldg-160-C","properties":{"name":"Baggett Stadium Press Box","ref":"160C","id":"bldg-160-C","ref_en":"160C","scalerank":"4","building:levels":"1","start_date":"2002","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.665608,35.307319]}}
+,
+{"type":"Feature","id":"bldg-125-C","properties":{"name":"Serrano Ranch Sheep Barn","ref":"125C","id":"bldg-125-C","ref_en":"125C","scalerank":"4","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660132,35.333589]}}
+,
+{"type":"Feature","id":"bldg-019-0","properties":{"name":"Dining Complex","ref":"0190","id":"bldg-019-0","ref_en":"19","short_name":"Dining","alt_name":"University Dining Complex;Avenue, The;19 Metro Station;Lucy's Juice;Sandwich Factory;Tapango's, Avenue;City Deli, Avenue;Chick-fil-A, Avenue;Fusion Bowl, Avenue","scalerank":"3","building:levels":"2","start_date":"1961","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.659885,35.299606]}}
+,
+{"type":"Feature","id":"bldg-153-T","properties":{"name":"523 Paseo Bella Montana","ref":"153T","id":"bldg-153-T","ref_en":"153T","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.674891,35.298833]}}
+,
+{"type":"Feature","id":"bldg-042-0","properties":{"name":"Robert A. Mott Physical Education","ref":"0420","id":"bldg-042-0","ref_en":"42","short_name":"Mott P E","alt_name":"Mott Physical Education, Robert A.;Gymnasium, Mott","scalerank":"3","building:levels":"2","start_date":"1960-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658772,35.298797]}}
+,
+{"type":"Feature","id":"bldg-048-J","properties":{"name":"EHS Lath House (Al)","ref":"048J","id":"bldg-048-J","ref_en":"48J","scalerank":"4","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663183,35.308955]}}
+,
+{"type":"Feature","id":"bldg-121-P","properties":{"name":"Cheda Ranch Water Storage","ref":"121P","id":"bldg-121-P","ref_en":"121P","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.684062,35.312665]}}
+,
+{"type":"Feature","id":"bldg-083-0","properties":{"name":"Technology Park","ref":"0830","id":"bldg-083-0","ref_en":"83","short_name":"Tech Park","scalerank":"2","building:levels":"1","start_date":"2011","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671793,35.305408]}}
+,
+{"type":"Feature","id":"bldg-114-A","properties":{"name":"Yosemite Hall Tower 0","ref":"114A","id":"bldg-114-A","ref_en":"114A","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654002,35.297923]}}
+,
+{"type":"Feature","id":"bldg-018-C","properties":{"name":"Dairy Science Artificial Insemination Lab","ref":"018C","id":"bldg-018-C","ref_en":"18C","scalerank":"4","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.67133,35.306555]}}
+,
+{"type":"Feature","id":"bldg-021-A","properties":{"name":"Engineering West Addition","ref":"021A","id":"bldg-021-A","ref_en":"21A","scalerank":"4","building:levels":"2","start_date":"1977-5","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663794,35.2999]}}
+,
+{"type":"Feature","id":"bldg-163-J","properties":{"name":"Sports Complex South Scorekeepers Station","ref":"163J","id":"bldg-163-J","ref_en":"163J","scalerank":"3","building:levels":"1","start_date":"2005-6","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.667188,35.304572]}}
+,
+{"type":"Feature","id":"bldg-045-0","properties":{"name":"H. P. Davidson Music Center","ref":"0450","id":"bldg-045-0","ref_en":"45","short_name":"Davidson Music","alt_name":"Music Center, H. P. Davidson","scalerank":"3","building:levels":"2","start_date":"1961-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.657991,35.299329]}}
+,
+{"type":"Feature","id":"bldg-153-D","properties":{"name":"635 Paseo Bella Montana","ref":"153D","id":"bldg-153-D","ref_en":"153D","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675777,35.298313]}}
+,
+{"type":"Feature","id":"bldg-170-G","properties":{"name":"Cerro San Luis","ref":"170G","id":"bldg-170-G","ref_en":"170G","short_name":"San Luis","scalerank":"4","building:levels":"1","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.6573,35.304035]}}
+,
+{"type":"Feature","id":"bldg-113-A","properties":{"name":"Sierra Madre Hall Tower 0","ref":"113A","id":"bldg-113-A","ref_en":"113A","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.655173,35.299115]}}
+,
+{"type":"Feature","id":"bldg-126-S","properties":{"name":"Recreational Flight Range","ref":"126S","id":"bldg-126-S","ref_en":"126S","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.752496,35.328345]}}
+,
+{"type":"Feature","id":"bldg-040-0","properties":{"name":"Engineering South","ref":"0400","id":"bldg-040-0","ref_en":"40","short_name":"Eng South","alt_name":"Central Plant","scalerank":"3","building:levels":"2","start_date":"1954-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660924,35.299187]}}
+,
+{"type":"Feature","id":"bldg-125-V","properties":{"name":"Serrano Ranch Property","ref":"125V","id":"bldg-125-V","ref_en":"125V","short_name":"Serrano Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.645149,35.33236]}}
+,
+{"type":"Feature","id":"bldg-150-U","properties":{"name":"PSIC Storage Yard","ref":"150U","id":"bldg-150-U","ref_en":"150U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679904,35.311427]}}
+,
+{"type":"Feature","id":"bldg-055-0","properties":{"name":"Beef Cattle Evaluation Center","ref":"0550","id":"bldg-055-0","ref_en":"55","short_name":"BCEC","scalerank":"2","building:levels":"1","start_date":"1972","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679197,35.309431]}}
+,
+{"type":"Feature","id":"bldg-160-B","properties":{"name":"Sports Complex Baseball Stadium, Team Room","ref":"160B","id":"bldg-160-B","ref_en":"160B","scalerank":"4","building:levels":"1","start_date":"2001","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.665793,35.306631]}}
+,
+{"type":"Feature","id":"bldg-043-D","properties":{"name":"Rec Center Sand Volleyball Courts","ref":"043D","id":"bldg-043-D","ref_en":"43D","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.659582,35.297228]}}
+,
+{"type":"Feature","id":"bldg-121-E","properties":{"name":"Cheda Ranch Milking Barn","ref":"121E","id":"bldg-121-E","ref_en":"121E","scalerank":"4","building:levels":"1","start_date":"1951","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683708,35.312786]}}
+,
+{"type":"Feature","id":"bldg-004-0","properties":{"name":"Research Development Center","ref":"0040","id":"bldg-004-0","ref_en":"04","short_name":"Research Center","alt_name":"Hanger","scalerank":"2","building:levels":"2","start_date":"1956","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664924,35.305357]}}
+,
+{"type":"Feature","id":"bldg-160-D","properties":{"name":"Batting Cages 160 North","ref":"160D","id":"bldg-160-D","ref_en":"160D","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.664591,35.307157]}}
+,
+{"type":"Feature","id":"bldg-050-K","properties":{"name":"Communications Services Storage","ref":"050K","id":"bldg-050-K","ref_en":"50K","scalerank":"4","building:levels":"1","start_date":"2005-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671296,35.304217]}}
+,
+{"type":"Feature","id":"bldg-163-I","properties":{"name":"Sports Complex Mid Scorekeepers Station","ref":"163I","id":"bldg-163-I","ref_en":"163I","scalerank":"3","building:levels":"1","start_date":"2005-6","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.667207,35.304654]}}
+,
+{"type":"Feature","id":"bldg-161-C","properties":{"name":"Batting Cages 161 North","ref":"161C","id":"bldg-161-C","ref_en":"161C","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.666146,35.3074]}}
+,
+{"type":"Feature","id":"bldg-172-F","properties":{"name":"tsɨtqawɨ","ref":"172F","id":"bldg-172-F","ref_en":"172F","short_name":"tqw","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654629,35.296842]}}
+,
+{"type":"Feature","id":"bldg-126-V","properties":{"name":"Chorro Creek Ranch Property","ref":"126V","id":"bldg-126-V","ref_en":"126V","short_name":"Chorro Creek Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.763747,35.335505]}}
+,
+{"type":"Feature","id":"bldg-127-G","properties":{"name":"Escuela Beef Center Residence (M050)","ref":"127G","id":"bldg-127-G","ref_en":"127G","scalerank":"4","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.723949,35.347028]}}
+,
+{"type":"Feature","id":"bldg-009-B","properties":{"name":"Farm Shop Storage","ref":"009B","id":"bldg-009-B","ref_en":"09B","scalerank":"4","building:levels":"1","start_date":"1960","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661888,35.304682]}}
+,
+{"type":"Feature","id":"bldg-031-0","properties":{"name":"University Housing","ref":"0310","id":"bldg-031-0","ref_en":"31","short_name":"Housing","alt_name":"Housing Administration","scalerank":"3","building:levels":"2","start_date":"2007-7","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657599,35.301959]}}
+,
+{"type":"Feature","id":"bldg-171-G","properties":{"name":"Gypsum","ref":"171G","id":"bldg-171-G","ref_en":"171G","short_name":"Gypsum","scalerank":"4","building:levels":"5","start_date":"2009-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657504,35.308353]}}
+,
+{"type":"Feature","id":"bldg-153-M","properties":{"name":"536 Paseo Bella Montana","ref":"153M","id":"bldg-153-M","ref_en":"153M","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675301,35.29886]}}
+,
+{"type":"Feature","id":"bldg-162-C","properties":{"name":"Sports Complex Upper Soccer 3","ref":"162C","id":"bldg-162-C","ref_en":"162C","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.668308,35.308776]}}
+,
+{"type":"Feature","id":"bldg-095-G","properties":{"name":"Architectural Canyon Greenhouse","ref":"095G","id":"bldg-095-G","ref_en":"95G","scalerank":"4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65374,35.315436]}}
+,
+{"type":"Feature","id":"bldg-106-0","properties":{"name":"Santa Lucia Hall","ref":"1060","id":"bldg-106-0","ref_en":"106","short_name":"Santa Lucia","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657725,35.301553]}}
+,
+{"type":"Feature","id":"bldg-035-0","properties":{"name":"Robert E. Kennedy Library","ref":"0350","id":"bldg-035-0","ref_en":"35","short_name":"Kennedy Library","alt_name":"Kennedy Library, Robert E.;Library, Robert E. Kennedy;Julian's Patisserie","scalerank":"2","building:levels":"5","start_date":"1980-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66394,35.301945]}}
+,
+{"type":"Feature","id":"bldg-121-V","properties":{"name":"Cheda Ranch Property","ref":"121V","id":"bldg-121-V","ref_en":"121V","short_name":"Cheda Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.683644,35.312339]}}
+,
+{"type":"Feature","id":"bldg-150-B","properties":{"name":"PSIC Test Brooding House","ref":"150B","id":"bldg-150-B","ref_en":"150B","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.680028,35.31113]}}
+,
+{"type":"Feature","id":"bldg-122-V","properties":{"name":"Parker Ranch Property","ref":"122V","id":"bldg-122-V","ref_en":"122V","short_name":"Parker Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.678712,35.307123]}}
+,
+{"type":"Feature","id":"bldg-153-O","properties":{"name":"577 Paseo Bella Montana","ref":"153O","id":"bldg-153-O","ref_en":"153O","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.67582,35.299829]}}
+,
+{"type":"Feature","id":"bldg-153-E","properties":{"name":"623 Paseo Bella Montana","ref":"153E","id":"bldg-153-E","ref_en":"153E","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675795,35.298705]}}
+,
+{"type":"Feature","id":"bldg-020-0","properties":{"name":"Engineering East","ref":"0200","id":"bldg-020-0","ref_en":"20","short_name":"Eng East","alt_name":"Engineering East Faculty Offices","scalerank":"3","building:levels":"1","start_date":"1957","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661593,35.300424]}}
+,
+{"type":"Feature","id":"bldg-208-U","properties":{"name":"Radio Tower","ref":"208U","id":"bldg-208-U","ref_en":"208U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.67343,35.30058]}}
+,
+{"type":"Feature","id":"bldg-171-A","properties":{"name":"Aliso","ref":"171A","id":"bldg-171-A","ref_en":"171A","short_name":"Aliso","alt_name":"Village Market","scalerank":"4","building:levels":"5","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.659472,35.30685]}}
+,
+{"type":"Feature","id":"bldg-018-V","properties":{"name":"Eugene & Rachel Boone Dairy Science Complex","ref":"018V","id":"bldg-018-V","ref_en":"18V","short_name":"Boone Dairy","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.67229,35.307445]}}
+,
+{"type":"Feature","id":"bldg-123-C","properties":{"name":"Peterson Barn","ref":"123C","id":"bldg-123-C","ref_en":"123C","scalerank":"4","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.650664,35.3144]}}
+,
+{"type":"Feature","id":"bldg-170-F","properties":{"name":"Cerro Islay","ref":"170F","id":"bldg-170-F","ref_en":"170F","short_name":"Islay","scalerank":"4","building:levels":"5","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.656417,35.304815]}}
+,
+{"type":"Feature","id":"bldg-105-0","properties":{"name":"Trinity Hall","ref":"1050","id":"bldg-105-0","ref_en":"105","short_name":"Trinity","alt_name":"South Mountain Residence Halls","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657104,35.301789]}}
+,
+{"type":"Feature","id":"bldg-115-0","properties":{"name":"Chase Hall","ref":"1150","id":"bldg-115-0","ref_en":"115","short_name":"Chase","scalerank":"3","building:levels":"2","start_date":"1931","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663766,35.297896]}}
+,
+{"type":"Feature","id":"bldg-121-S","properties":{"name":"Cheda Ranch Water Treatment Pond","ref":"121S","id":"bldg-121-S","ref_en":"121S","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.68302,35.312631]}}
+,
+{"type":"Feature","id":"bldg-055-B","properties":{"name":"Beef Cattle Evaluation Center Office","ref":"055B","id":"bldg-055-B","ref_en":"55B","scalerank":"4","building:levels":"1","start_date":"1972","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679718,35.309612]}}
+,
+{"type":"Feature","id":"bldg-008-S","properties":{"name":"Agricultural Engineering North Storage","ref":"008S","id":"bldg-008-S","ref_en":"08S","scalerank":"4","building:levels":"1","start_date":"1954-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661957,35.303705]}}
+,
+{"type":"Feature","id":"bldg-211-0","properties":{"name":"Shepard Reservoir","ref":"2110","id":"bldg-211-0","ref_en":"211","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.667707,35.310031]}}
+,
+{"type":"Feature","id":"bldg-153-R","properties":{"name":"545 Paseo Bella Montana","ref":"153R","id":"bldg-153-R","ref_en":"153R","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675307,35.299293]}}
+,
+{"type":"Feature","id":"bldg-008-0","properties":{"name":"Bioresource and Agricultural Engineering","ref":"0080","id":"bldg-008-0","ref_en":"08","short_name":"Ag Engineering","alt_name":"Agricultural Engineering, Bioresource and","scalerank":"3","building:levels":"1","start_date":"1954-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661668,35.303076]}}
+,
+{"type":"Feature","id":"bldg-024-0","properties":{"name":"Food Processing","ref":"0240","id":"bldg-024-0","ref_en":"24","short_name":"Food Processing","alt_name":"Campus Market;Market, Campus;Starbucks Coffee, Market","scalerank":"3","building:levels":"1","start_date":"1961-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663021,35.303435]}}
+,
+{"type":"Feature","id":"bldg-150-I","properties":{"name":"PSIC Residence Trailer (M014-M032)","ref":"150I","id":"bldg-150-I","ref_en":"150I","scalerank":"4","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679806,35.312002]}}
+,
+{"type":"Feature","id":"bldg-010-0","properties":{"name":"Alan A. Erhart Agriculture","ref":"0100","id":"bldg-010-0","ref_en":"10","short_name":"Erhart Ag","alt_name":"Erhart Agriculture;Agriculture, Alan A. Erhart","scalerank":"3","building:levels":"2","start_date":"1959-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661514,35.302348]}}
+,
+{"type":"Feature","id":"bldg-163-E","properties":{"name":"Sports Complex Lower Softball 2","ref":"163E","id":"bldg-163-E","ref_en":"163E","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.667102,35.304807]}}
+,
+{"type":"Feature","id":"bldg-048-F","properties":{"name":"EHS Solar Greenhouse","ref":"048F","id":"bldg-048-F","ref_en":"48F","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662891,35.309208]}}
+,
+{"type":"Feature","id":"bldg-032-K","properties":{"name":"Equine Center Mare Barn Northwest","ref":"032K","id":"bldg-032-K","ref_en":"32K","scalerank":"4","building:levels":"1","start_date":"2005","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665075,35.310628]}}
+,
+{"type":"Feature","id":"bldg-171-F","properties":{"name":"Foxen","ref":"171F","id":"bldg-171-F","ref_en":"171F","short_name":"Foxen","scalerank":"4","building:levels":"5","start_date":"2009-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.658375,35.308725]}}
+,
+{"type":"Feature","id":"bldg-126-U","properties":{"name":"Chorro Creek Ranch Garage","ref":"126U","id":"bldg-126-U","ref_en":"126U","scalerank":"4","building:levels":"1","start_date":"1968","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.744605,35.332914]}}
+,
+{"type":"Feature","id":"bldg-074-D","properties":{"name":"Emergency Operations Center","ref":"074D","id":"bldg-074-D","ref_en":"74D","scalerank":"3","building:levels":"1","start_date":"1979","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660947,35.302931]}}
+,
+{"type":"Feature","id":"bldg-136-H","properties":{"name":"ITRC Storage","ref":"136H","id":"bldg-136-H","ref_en":"136H","scalerank":"4","start_date":"2009","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66025,35.307038]}}
+,
+{"type":"Feature","id":"bldg-137-F","properties":{"name":"Compost Site","ref":"137F","id":"bldg-137-F","ref_en":"137F","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.672503,35.309178]}}
+,
+{"type":"Feature","id":"bldg-006-V","properties":{"name":"Performing Arts Center","ref":"006V","id":"bldg-006-V","ref_en":"06V","short_name":"PAC","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.657683,35.300025]}}
+,
+{"type":"Feature","id":"bldg-122-C","properties":{"name":"Parker Storage","ref":"122C","id":"bldg-122-C","ref_en":"122C","scalerank":"4","building:levels":"1","start_date":"1929","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678498,35.306913]}}
+,
+{"type":"Feature","id":"bldg-113-E","properties":{"name":"Sierra Madre Hall Tower 4","ref":"113E","id":"bldg-113-E","ref_en":"113E","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654261,35.298434]}}
+,
+{"type":"Feature","id":"bldg-027-0","properties":{"name":"Health Center","ref":"0270","id":"bldg-027-0","ref_en":"27","short_name":"Health Center","scalerank":"3","building:levels":"1","start_date":"1960-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661469,35.297753]}}
+,
+{"type":"Feature","id":"bldg-044-0","properties":{"name":"Alex and Faye Spanos Theatre","ref":"0440","id":"bldg-044-0","ref_en":"44","short_name":"Spanos Theatre","alt_name":"Spanos Theater","scalerank":"3","building:levels":"2","start_date":"1961-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.657785,35.299727]}}
+,
+{"type":"Feature","id":"bldg-153-C","properties":{"name":"647 Paseo Bella Montana","ref":"153C","id":"bldg-153-C","ref_en":"153C","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675572,35.298252]}}
+,
+{"type":"Feature","id":"bldg-137-D","properties":{"name":"Student Experimental Farm Packing Shed","ref":"137D","id":"bldg-137-D","ref_en":"137D","scalerank":"4","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673286,35.310511]}}
+,
+{"type":"Feature","id":"bldg-018-B","properties":{"name":"Dairy Science Physiology Lab","ref":"018B","id":"bldg-018-B","ref_en":"18B","scalerank":"4","building:levels":"1","start_date":"1992-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672477,35.307717]}}
+,
+{"type":"Feature","id":"bldg-180-0","properties":{"name":"Warren J Baker Center for Science and Mathematics","ref":"1800","id":"bldg-180-0","ref_en":"180","short_name":"Baker Science","scalerank":"3","building:levels":"6","start_date":"2013-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660453,35.301358]}}
+,
+{"type":"Feature","id":"bldg-186-0","properties":{"name":"Construction Innovations Center","ref":"1860","id":"bldg-186-0","ref_en":"186","short_name":"Construction Innov Ctr","scalerank":"3","building:levels":"3","start_date":"2008-5","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662723,35.299218]}}
+,
+{"type":"Feature","id":"bldg-056-E","properties":{"name":"Swine Unit Old Farrowing Unit","ref":"056E","id":"bldg-056-E","ref_en":"56E","scalerank":"4","building:levels":"1","start_date":"1970-11","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672431,35.312128]}}
+,
+{"type":"Feature","id":"bldg-172-E","properties":{"name":"nipumuʔ","ref":"172E","id":"bldg-172-E","ref_en":"172E","short_name":"npm","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654062,35.29634]}}
+,
+{"type":"Feature","id":"bldg-107-0","properties":{"name":"Muir Hall","ref":"1070","id":"bldg-107-0","ref_en":"107","short_name":"Muir","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.656729,35.300884]}}
+,
+{"type":"Feature","id":"bldg-048-E","properties":{"name":"EHS Garcia Barn","ref":"048E","id":"bldg-048-E","ref_en":"48E","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663146,35.309566]}}
+,
+{"type":"Feature","id":"bldg-150-C","properties":{"name":"PSIC Equipment and Maintenance","ref":"150C","id":"bldg-150-C","ref_en":"150C","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679799,35.311089]}}
+,
+{"type":"Feature","id":"bldg-057-C","properties":{"name":"Veterinary Hospital Residence Trailer (M020)","ref":"057C","id":"bldg-057-C","ref_en":"57C","scalerank":"4","building:levels":"1","start_date":"1998","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.670656,35.306227]}}
+,
+{"type":"Feature","id":"bldg-048-Q","properties":{"name":"EHS Environmental Horticultural Science D&P","ref":"048Q","id":"bldg-048-Q","ref_en":"48Q","scalerank":"4","building:levels":"1","start_date":"2003-1-2","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662498,35.30862]}}
+,
+{"type":"Feature","id":"bldg-136-G","properties":{"name":"ITRC Shop","ref":"136G","id":"bldg-136-G","ref_en":"136G","short_name":"ITRC Shop","scalerank":"4","building:levels":"1","start_date":"2009-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659987,35.307074]}}
+,
+{"type":"Feature","id":"bldg-114-H","properties":{"name":"Yosemite Hall Tower 7","ref":"114H","id":"bldg-114-H","ref_en":"114H","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.6529,35.297698]}}
+,
+{"type":"Feature","id":"bldg-114-B","properties":{"name":"Yosemite Hall Tower 1","ref":"114B","id":"bldg-114-B","ref_en":"114B","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653945,35.298124]}}
+,
+{"type":"Feature","id":"bldg-095-U","properties":{"name":"Architectural Canyon Water Tanks","ref":"095U","id":"bldg-095-U","ref_en":"95U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.655395,35.316913]}}
+,
+{"type":"Feature","id":"bldg-070-E","properties":{"name":"Facility Services Paint Shop","ref":"070E","id":"bldg-070-E","ref_en":"70E","scalerank":"4","building:levels":"1","start_date":"1961-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659698,35.304405]}}
+,
+{"type":"Feature","id":"bldg-130-0","properties":{"name":"Grand Avenue Parking Structure","ref":"1300","id":"bldg-130-0","ref_en":"130","short_name":"Grand Parking","alt_name":"Parking Structure, Grand Avenue","scalerank":"2","building:levels":"4","start_date":"2001-4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65753675731,35.29803751139]}}
+,
+{"type":"Feature","id":"bldg-117-0","properties":{"name":"Heron Hall","ref":"1170","id":"bldg-117-0","ref_en":"117","short_name":"Heron","scalerank":"3","building:levels":"2","start_date":"1927","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664367,35.29724]}}
+,
+{"type":"Feature","id":"bldg-048-I","properties":{"name":"EHS Shade House","ref":"048I","id":"bldg-048-I","ref_en":"48I","scalerank":"4","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662934,35.309011]}}
+,
+{"type":"Feature","id":"bldg-021-0","properties":{"name":"Engineering West","ref":"0210","id":"bldg-021-0","ref_en":"21","short_name":"Eng West","scalerank":"3","building:levels":"3","start_date":"1962-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663044,35.30025]}}
+,
+{"type":"Feature","id":"bldg-018-O","properties":{"name":"Dairy Science Methane Power Plant","ref":"018O","id":"bldg-018-O","ref_en":"18O","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.67318,35.307012]}}
+,
+{"type":"Feature","id":"bldg-048-N","properties":{"name":"EHS Bug House","ref":"048N","id":"bldg-048-N","ref_en":"48N","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662186,35.308761]}}
+,
+{"type":"Feature","id":"bldg-032-J","properties":{"name":"Equine Center Mare Barn","ref":"032J","id":"bldg-032-J","ref_en":"32J","scalerank":"4","building:levels":"1","start_date":"2004","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664516,35.309413]}}
+,
+{"type":"Feature","id":"bldg-095-F","properties":{"name":"Architectural Canyon Restroom","ref":"095F","id":"bldg-095-F","ref_en":"95F","scalerank":"4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.653141,35.315554]}}
+,
+{"type":"Feature","id":"bldg-150-G","properties":{"name":"PSIC Project Breeder House","ref":"150G","id":"bldg-150-G","ref_en":"150G","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678949,35.31111]}}
+,
+{"type":"Feature","id":"bldg-224-0","properties":{"name":"Chorro Reservoir","ref":"2240","id":"bldg-224-0","ref_en":"224","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.754689,35.331104]}}
+,
+{"type":"Feature","id":"bldg-102-0","properties":{"name":"Palomar Hall","ref":"1020","id":"bldg-102-0","ref_en":"102","short_name":"Palomar","scalerank":"3","building:levels":"2","start_date":"1953-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65765,35.303048]}}
+,
+{"type":"Feature","id":"bldg-136-V","properties":{"name":"ITRC Site","ref":"136V","id":"bldg-136-V","ref_en":"136V","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.660644,35.307648]}}
+,
+{"type":"Feature","id":"bldg-048-V","properties":{"name":"Environmental Horticultural Science Complex","ref":"048V","id":"bldg-048-V","ref_en":"48V","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.662761,35.309873]}}
+,
+{"type":"Feature","id":"bldg-122-B","properties":{"name":"Parker Restroom","ref":"122B","id":"bldg-122-B","ref_en":"122B","scalerank":"4","building:levels":"1","start_date":"1968","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678396,35.306906]}}
+,
+{"type":"Feature","id":"bldg-048-C","properties":{"name":"EHS Soil Science Greenhouse","ref":"048C","id":"bldg-048-C","ref_en":"48C","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663611,35.310015]}}
+,
+{"type":"Feature","id":"bldg-154-B","properties":{"name":"Animal Nutrition Center Hay Storage","ref":"154B","id":"bldg-154-B","ref_en":"154B","scalerank":"4","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.677618,35.311782]}}
+,
+{"type":"Feature","id":"bldg-026-M","properties":{"name":"Graphic Arts Modular (M063)","ref":"026M","id":"bldg-026-M","ref_en":"26M","scalerank":"4","building:levels":"1","start_date":"2014-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661666,35.298932]}}
+,
+{"type":"Feature","id":"bldg-032-F","properties":{"name":"Equine Center Horse Barn","ref":"032F","id":"bldg-032-F","ref_en":"32F","scalerank":"4","building:levels":"1","start_date":"1940-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663965,35.309818]}}
+,
+{"type":"Feature","id":"bldg-011-0","properties":{"name":"Agricultural Sciences","ref":"0110","id":"bldg-011-0","ref_en":"11","short_name":"Ag Sciences","scalerank":"3","building:levels":"3","start_date":"1988-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662933,35.302726]}}
+,
+{"type":"Feature","id":"bldg-017-J","properties":{"name":"Crop Science Lab","ref":"017J","id":"bldg-017-J","ref_en":"17J","scalerank":"4","building:levels":"1","start_date":"2002-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.668866,35.302368]}}
+,
+{"type":"Feature","id":"bldg-070-B","properties":{"name":"Facility Services Electric Shop","ref":"070B","id":"bldg-070-B","ref_en":"70B","scalerank":"4","building:levels":"2","start_date":"1922-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66083,35.304072]}}
+,
+{"type":"Feature","id":"bldg-163-F","properties":{"name":"Sports Complex Lower Softball 3","ref":"163F","id":"bldg-163-F","ref_en":"163F","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.666982,35.304456]}}
+,
+{"type":"Feature","id":"bldg-048-X","properties":{"name":"Leaning Pine Arboretum","ref":"048X","id":"bldg-048-X","ref_en":"48X","short_name":"Arboretum","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.661969,35.310461]}}
+,
+{"type":"Feature","id":"bldg-032-0","properties":{"name":"Cal Poly Equine Center","ref":"0320","id":"bldg-032-0","ref_en":"32","short_name":"Equine Center","scalerank":"3","building:levels":"1","start_date":"1940-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66437,35.309113]}}
+,
+{"type":"Feature","id":"bldg-136-U","properties":{"name":"ITRC Transformer Building","ref":"136U","id":"bldg-136-U","ref_en":"136U","scalerank":"4","building:levels":"1","start_date":"2002","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660397,35.307007]}}
+,
+{"type":"Feature","id":"bldg-026-A","properties":{"name":"Printing Press","ref":"026A","id":"bldg-026-A","ref_en":"26A","short_name":"Press","scalerank":"4","building:levels":"1","start_date":"2003","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661242,35.29938]}}
+,
+{"type":"Feature","id":"bldg-122-S","properties":{"name":"Parker Silo","ref":"122S","id":"bldg-122-S","ref_en":"122S","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.678644,35.308045]}}
+,
+{"type":"Feature","id":"bldg-043-A","properties":{"name":"Kinesiology","ref":"043A","id":"bldg-043-A","ref_en":"43A","short_name":"Kinesiology","scalerank":"3","building:levels":"4","start_date":"1993-5","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65983,35.298816]}}
+,
+{"type":"Feature","id":"bldg-113-0","properties":{"name":"Sierra Madre Hall","ref":"1130","id":"bldg-113-0","ref_en":"113","short_name":"Sierra Madre","scalerank":"2","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654969,35.29877]}}
+,
+{"type":"Feature","id":"bldg-150-0","properties":{"name":"Poultry Science Instructional Center","ref":"1500","id":"bldg-150-0","ref_en":"150","short_name":"Poultry Science","scalerank":"2","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679661,35.311539]}}
+,
+{"type":"Feature","id":"bldg-061-T","properties":{"name":"Mustang Stadium South Tennis Courts","ref":"061T","id":"bldg-061-T","ref_en":"61T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.664728,35.296977]}}
+,
+{"type":"Feature","id":"bldg-018-L","properties":{"name":"Dairy Science Residence Trailer (M008)","ref":"018L","id":"bldg-018-L","ref_en":"18L","scalerank":"4","building:levels":"1","start_date":"1990-12","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672061,35.307903]}}
+,
+{"type":"Feature","id":"bldg-170-D","properties":{"name":"Cerro Romauldo","ref":"170D","id":"bldg-170-D","ref_en":"170D","short_name":"Romauldo","scalerank":"4","building:levels":"5","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.6575,35.305174]}}
+,
+{"type":"Feature","id":"bldg-095-V","properties":{"name":"Architectural Canyon","ref":"095V","id":"bldg-095-V","ref_en":"95V","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.654092,35.315869]}}
+,
+{"type":"Feature","id":"bldg-150-N","properties":{"name":"PSIC Silos H","ref":"150N","id":"bldg-150-N","ref_en":"150N","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679447,35.311845]}}
+,
+{"type":"Feature","id":"bldg-113-F","properties":{"name":"Sierra Madre Hall Tower 5","ref":"113F","id":"bldg-113-F","ref_en":"113F","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654637,35.298544]}}
+,
+{"type":"Feature","id":"bldg-053-A","properties":{"name":"Science North Annex","ref":"053A","id":"bldg-053-A","ref_en":"53A","scalerank":"4","building:levels":"2","start_date":"1968-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660374,35.302028]}}
+,
+{"type":"Feature","id":"bldg-058-0","properties":{"name":"Welding","ref":"0580","id":"bldg-058-0","ref_en":"58","short_name":"Welding","scalerank":"3","building:levels":"2","start_date":"1941-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66143,35.30357]}}
+,
+{"type":"Feature","id":"bldg-214-0","properties":{"name":"Frog Pond Reservoir","ref":"2140","id":"bldg-214-0","ref_en":"214","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.688511,35.319369]}}
+,
+{"type":"Feature","id":"bldg-016-B","properties":{"name":"Beef Unit Feed Unit","ref":"016B","id":"bldg-016-B","ref_en":"16B","scalerank":"4","building:levels":"1","start_date":"1952","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662236,35.306892]}}
+,
+{"type":"Feature","id":"bldg-092-M","properties":{"name":"Poly Grove Trailer Park (M066, M067, M068)","ref":"092M","id":"bldg-092-M","ref_en":"92M","scalerank":"4","building:levels":"1","start_date":"2014-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.666098,35.301007]}}
+,
+{"type":"Feature","id":"bldg-061-D","properties":{"name":"Spanos Stadium West Bleachers","ref":"061D","id":"bldg-061-D","ref_en":"61D","scalerank":"4","building:levels":"3","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665475,35.298333]}}
+,
+{"type":"Feature","id":"bldg-018-I","properties":{"name":"Dairy Science Hay Barn","ref":"018I","id":"bldg-018-I","ref_en":"18I","scalerank":"4","building:levels":"1","start_date":"1993-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672952,35.3083]}}
+,
+{"type":"Feature","id":"bldg-041-B","properties":{"name":"Baldwin and Mary Reinhold Aerospace Engineering Laboratories","ref":"041B","id":"bldg-041-B","ref_en":"41B","short_name":"Reinhold Aero","scalerank":"4","building:levels":"1","start_date":"2002-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.666036,35.302108]}}
+,
+{"type":"Feature","id":"bldg-056-0","properties":{"name":"Swine Unit","ref":"0560","id":"bldg-056-0","ref_en":"56","short_name":"Swine Unit","scalerank":"2","building:levels":"1","start_date":"1970-11","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672906,35.311962]}}
+,
+{"type":"Feature","id":"bldg-121-R","properties":{"name":"Cheda Ranch Pole Barn South","ref":"121R","id":"bldg-121-R","ref_en":"121R","scalerank":"4","building:levels":"1","start_date":"1965","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.68297,35.312489]}}
+,
+{"type":"Feature","id":"bldg-212-0","properties":{"name":"Smith Reservoir","ref":"2120","id":"bldg-212-0","ref_en":"212","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.6666,35.308249]}}
+,
+{"type":"Feature","id":"bldg-014-0","properties":{"name":"Frank E. Pilling Building","ref":"0140","id":"bldg-014-0","ref_en":"14","short_name":"Pilling","alt_name":"Computer Science;Pilling Building","scalerank":"3","building:levels":"3","start_date":"1969-5","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662164,35.299861]}}
+,
+{"type":"Feature","id":"bldg-129-U","properties":{"name":"Avila Storage","ref":"129U","id":"bldg-129-U","ref_en":"129U","scalerank":"4","building:levels":"1","start_date":"1993-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.652801,35.299174]}}
+,
+{"type":"Feature","id":"bldg-171-H","properties":{"name":"Huasna","ref":"171H","id":"bldg-171-H","ref_en":"171H","short_name":"Huasna","scalerank":"4","building:levels":"5","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.658604,35.308102]}}
+,
+{"type":"Feature","id":"bldg-077-0","properties":{"name":"Rodeo Arena","ref":"0770","id":"bldg-077-0","ref_en":"77","short_name":"Rodeo Arena","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.670602,35.30911]}}
+,
+{"type":"Feature","id":"bldg-103-0","properties":{"name":"Whitney Hall","ref":"1030","id":"bldg-103-0","ref_en":"103","short_name":"Whitney","scalerank":"3","building:levels":"2","start_date":"1953-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657979,35.302498]}}
+,
+{"type":"Feature","id":"bldg-018-M","properties":{"name":"NRM Equipment Barn at Dairy","ref":"018M","id":"bldg-018-M","ref_en":"18M","scalerank":"4","building:levels":"1","start_date":"2009-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671511,35.308037]}}
+,
+{"type":"Feature","id":"bldg-108-0","properties":{"name":"Sequoia Hall","ref":"1080","id":"bldg-108-0","ref_en":"108","short_name":"Sequoia","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657388,35.300664]}}
+,
+{"type":"Feature","id":"bldg-018-J","properties":{"name":"Dairy Science Freestall A","ref":"018J","id":"bldg-018-J","ref_en":"18J","scalerank":"4","building:levels":"1","start_date":"1992-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.675186,35.307574]}}
+,
+{"type":"Feature","id":"bldg-153-J","properties":{"name":"630 Paseo Bella Montana","ref":"153J","id":"bldg-153-J","ref_en":"153J","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675488,35.298534]}}
+,
+{"type":"Feature","id":"bldg-009-0","properties":{"name":"Farm Shop","ref":"0090","id":"bldg-009-0","ref_en":"09","short_name":"Farm Shop","scalerank":"3","building:levels":"1","start_date":"1947-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662394,35.30427]}}
+,
+{"type":"Feature","id":"bldg-161-A","properties":{"name":"Sports Complex Softball Stadium, Lockers","ref":"161A","id":"bldg-161-A","ref_en":"161A","scalerank":"4","building:levels":"1","start_date":"2001","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.666827,35.306794]}}
+,
+{"type":"Feature","id":"bldg-017-0","properties":{"name":"Crop Science","ref":"0170","id":"bldg-017-0","ref_en":"17","short_name":"Crops","scalerank":"3","building:levels":"1","start_date":"1962-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.668444,35.302478]}}
+,
+{"type":"Feature","id":"bldg-123-V","properties":{"name":"Peterson Ranch Property","ref":"123V","id":"bldg-123-V","ref_en":"123V","short_name":"Peterson Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.648423,35.316425]}}
+,
+{"type":"Feature","id":"bldg-123-B","properties":{"name":"Peterson Ranch Residence Trailer (M015)","ref":"123B","id":"bldg-123-B","ref_en":"123B","scalerank":"4","building:levels":"1","start_date":"1990","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.650772,35.314195]}}
+,
+{"type":"Feature","id":"bldg-170-B","properties":{"name":"Cerro Cabrillo","ref":"170B","id":"bldg-170-B","ref_en":"170B","short_name":"Cabrillo","scalerank":"4","building:levels":"7","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.657002,35.304569]}}
+,
+{"type":"Feature","id":"bldg-153-N","properties":{"name":"540 Paseo Bella Montana","ref":"153N","id":"bldg-153-N","ref_en":"153N","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675427,35.299001]}}
+,
+{"type":"Feature","id":"bldg-081-0","properties":{"name":"Hillcrest","ref":"0810","id":"bldg-081-0","ref_en":"81","short_name":"Hillcrest","scalerank":"3","building:levels":"1","start_date":"1942-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658222,35.302008]}}
+,
+{"type":"Feature","id":"bldg-018-W","properties":{"name":"Dairy Science Pond Processing","ref":"018W","id":"bldg-018-W","ref_en":"18W","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.675228,35.306951]}}
+,
+{"type":"Feature","id":"bldg-129-0","properties":{"name":"Avila Ranch","ref":"1290","id":"bldg-129-0","ref_en":"129","scalerank":"1","building:levels":"2","start_date":"1993-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.652564,35.298839]}}
+,
+{"type":"Feature","id":"bldg-162-E","properties":{"name":"Upper Fields Maintenance Shed","ref":"162E","id":"bldg-162-E","ref_en":"162E","scalerank":"4","start_date":"2009","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.667902,35.308077]}}
+,
+{"type":"Feature","id":"bldg-042-W","properties":{"name":"Mott Physical Education Track Field","ref":"042W","id":"bldg-042-W","ref_en":"42W","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.656641,35.296922]}}
+,
+{"type":"Feature","id":"bldg-300-0","properties":{"name":"Biological Sciences Reserve","ref":"3000","id":"bldg-300-0","ref_en":"300","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.711178,35.363661]}}
+,
+{"type":"Feature","id":"bldg-121-A","properties":{"name":"Cheda Ranch McCloud","ref":"121A","id":"bldg-121-A","ref_en":"121A","scalerank":"4","building:levels":"1","start_date":"1938","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683367,35.312188]}}
+,
+{"type":"Feature","id":"bldg-095-B","properties":{"name":"Modular House","ref":"095B","id":"bldg-095-B","ref_en":"95B","scalerank":"4","building:levels":"2","start_date":"1964","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.654354,35.317107]}}
+,
+{"type":"Feature","id":"bldg-005-0","properties":{"name":"Architecture & Environmental Design","ref":"0050","id":"bldg-005-0","ref_en":"05","short_name":"Architecture & E Des","scalerank":"3","building:levels":"4","start_date":"1977-4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66457,35.300877]}}
+,
+{"type":"Feature","id":"bldg-150-E","properties":{"name":"PSIC Conventional Lay House","ref":"150E","id":"bldg-150-E","ref_en":"150E","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679358,35.311094]}}
+,
+{"type":"Feature","id":"bldg-133-0","properties":{"name":"Orfalea Family and ASI Children's Center","ref":"1330","id":"bldg-133-0","ref_en":"133","short_name":"Orfalea Children's Ctr","scalerank":"3","building:levels":"1","start_date":"1993","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.662864,35.297301]}}
+,
+{"type":"Feature","id":"bldg-162-B","properties":{"name":"Sports Complex Upper Soccer 2","ref":"162B","id":"bldg-162-B","ref_en":"162B","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.669144,35.309579]}}
+,
+{"type":"Feature","id":"bldg-017-C","properties":{"name":"Crop Science Chemical Mixing Lab","ref":"017C","id":"bldg-017-C","ref_en":"17C","scalerank":"4","building:levels":"1","start_date":"1986","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.668777,35.302813]}}
+,
+{"type":"Feature","id":"bldg-104-0","properties":{"name":"Lassen Hall","ref":"1040","id":"bldg-104-0","ref_en":"104","short_name":"Lassen","scalerank":"3","building:levels":"2","start_date":"1953-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.658441,35.302463]}}
+,
+{"type":"Feature","id":"bldg-150-D","properties":{"name":"PSIC Egg Packing Shed","ref":"150D","id":"bldg-150-D","ref_en":"150D","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679425,35.31122]}}
+,
+{"type":"Feature","id":"bldg-018-A","properties":{"name":"Leprino Foods Dairy Innovation Institute","ref":"018A","id":"bldg-018-A","ref_en":"18A","short_name":"Creamery","scalerank":"3","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671736,35.307503]}}
+,
+{"type":"Feature","id":"bldg-002-0","properties":{"name":"Cotchett Education Building","ref":"0020","id":"bldg-002-0","ref_en":"02","short_name":"Cotchett Education","alt_name":"Clock Tower Building;Education, Cotchett","scalerank":"3","building:levels":"3","start_date":"1941-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664608,35.300355]}}
+,
+{"type":"Feature","id":"bldg-153-Q","properties":{"name":"555 Paseo Bella Montana","ref":"153Q","id":"bldg-153-Q","ref_en":"153Q","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675442,35.299443]}}
+,
+{"type":"Feature","id":"bldg-127-F","properties":{"name":"Escuela Beef Center Lay-up Pen","ref":"127F","id":"bldg-127-F","ref_en":"127F","scalerank":"4","start_date":"2006-1-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.722997,35.347191]}}
+,
+{"type":"Feature","id":"bldg-121-D","properties":{"name":"Cheda Ranch Barn","ref":"121D","id":"bldg-121-D","ref_en":"121D","scalerank":"4","building:levels":"1","start_date":"1951","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.68321,35.312884]}}
+,
+{"type":"Feature","id":"bldg-061-E","properties":{"name":"Spanos Stadium Concession","ref":"061E","id":"bldg-061-E","ref_en":"61E","scalerank":"4","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665463,35.298974]}}
+,
+{"type":"Feature","id":"bldg-056-J","properties":{"name":"Swine Unit Nusery Lab  (M044)","ref":"056J","id":"bldg-056-J","ref_en":"56J","scalerank":"4","building:levels":"1","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673004,35.311374]}}
+,
+{"type":"Feature","id":"bldg-125-D","properties":{"name":"Serrano Ranch Storage","ref":"125D","id":"bldg-125-D","ref_en":"125D","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.660228,35.333194]}}
+,
+{"type":"Feature","id":"bldg-018-0","properties":{"name":"Dairy Science","ref":"0180","id":"bldg-018-0","ref_en":"18","short_name":"Milking Parlor","scalerank":"2","building:levels":"2","start_date":"1992-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672669,35.307175]}}
+,
+{"type":"Feature","id":"bldg-171-B","properties":{"name":"Buena Vista","ref":"171B","id":"bldg-171-B","ref_en":"171B","short_name":"Buena Vista","alt_name":"Jamba Juice;Tacos To-Go Grill","scalerank":"4","building:levels":"5","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.659277,35.307386]}}
+,
+{"type":"Feature","id":"bldg-043-B","properties":{"name":"Recreation Center Outdoor Pool 50 Meter","ref":"043B","id":"bldg-043-B","ref_en":"43B","scalerank":"4","building:levels":"1","start_date":"1993-5","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.660211,35.297885]}}
+,
+{"type":"Feature","id":"bldg-048-P","properties":{"name":"EHS Retractable Roof Growing Structure","ref":"048P","id":"bldg-048-P","ref_en":"48P","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.662324,35.309303]}}
+,
+{"type":"Feature","id":"bldg-007-A","properties":{"name":"Advanced Technology Laboratories Seismic Lab","ref":"007A","id":"bldg-007-A","ref_en":"07A","scalerank":"4","building:levels":"1","start_date":"1999-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66561,35.302023]}}
+,
+{"type":"Feature","id":"bldg-022-0","properties":{"name":"English","ref":"0220","id":"bldg-022-0","ref_en":"22","short_name":"English","scalerank":"3","building:levels":"2","start_date":"1962-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660918,35.30217]}}
+,
+{"type":"Feature","id":"bldg-171-J","properties":{"name":"Poly Canyon Village Pool","ref":"171J","id":"bldg-171-J","ref_en":"171J","scalerank":"4","building:levels":"1","start_date":"2008-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65835,35.307178]}}
+,
+{"type":"Feature","id":"bldg-128-C","properties":{"name":"West Field Equipment Storage","ref":"128C","id":"bldg-128-C","ref_en":"128C","scalerank":"4","building:levels":"1","start_date":"1962-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.669602,35.298084]}}
+,
+{"type":"Feature","id":"bldg-026-0","properties":{"name":"Graphic Arts","ref":"0260","id":"bldg-026-0","ref_en":"26","short_name":"Graphic Arts","scalerank":"3","building:levels":"3","start_date":"1962-2","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661807,35.299297]}}
+,
+{"type":"Feature","id":"bldg-215-A","properties":{"name":"Stenner Pumphouse","ref":"215A","id":"bldg-215-A","ref_en":"215A","scalerank":"4","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.681594,35.318864]}}
+,
+{"type":"Feature","id":"bldg-025-0","properties":{"name":"Faculty Offices East","ref":"0250","id":"bldg-025-0","ref_en":"25","short_name":"Fac Off East","scalerank":"3","building:levels":"3","start_date":"1991-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659255,35.300804]}}
+,
+{"type":"Feature","id":"bldg-045-T","properties":{"name":"Theater & Dance Modular Lab (M053)","ref":"045T","id":"bldg-045-T","ref_en":"45T","scalerank":"4","building:levels":"1","start_date":"2009-12","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.657791,35.29884]}}
+,
+{"type":"Feature","id":"bldg-114-G","properties":{"name":"Yosemite Hall Tower 6","ref":"114G","id":"bldg-114-G","ref_en":"114G","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653133,35.29783]}}
+,
+{"type":"Feature","id":"bldg-061-0","properties":{"name":"Alex G. Spanos Stadium","ref":"0610","id":"bldg-061-0","ref_en":"61","short_name":"Spanos Stadium","alt_name":"Spanos Stadium","scalerank":"2","start_date":"2007"},"geometry":{"type":"Point","coordinates":[-120.664625,35.298506]}}
+,
+{"type":"Feature","id":"bldg-153-I","properties":{"name":"620 Paseo Bella Montana","ref":"153I","id":"bldg-153-I","ref_en":"153I","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675515,35.298716]}}
+,
+{"type":"Feature","id":"bldg-215-0","properties":{"name":"Middlecamp Reservoir","ref":"2150","id":"bldg-215-0","ref_en":"215","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.682283,35.319546]}}
+,
+{"type":"Feature","id":"bldg-124-0","properties":{"name":"Student Services","ref":"1240","id":"bldg-124-0","ref_en":"124","short_name":"Student Services","scalerank":"3","building:levels":"2","start_date":"1990-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664096,35.298598]}}
+,
+{"type":"Feature","id":"bldg-016-A","properties":{"name":"Beef Unit Residence Herdsman","ref":"016A","id":"bldg-016-A","ref_en":"16A","scalerank":"3","building:levels":"1","start_date":"1938","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663361,35.307216]}}
+,
+{"type":"Feature","id":"bldg-109-0","properties":{"name":"Fremont Hall","ref":"1090","id":"bldg-109-0","ref_en":"109","short_name":"Fremont","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.655798,35.300224]}}
+,
+{"type":"Feature","id":"bldg-150-T","properties":{"name":"PSIC Silos A","ref":"150T","id":"bldg-150-T","ref_en":"150T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.680364,35.31112]}}
+,
+{"type":"Feature","id":"bldg-150-H","properties":{"name":"PSIC Floor Breeder House","ref":"150H","id":"bldg-150-H","ref_en":"150H","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.67913,35.311679]}}
+,
+{"type":"Feature","id":"bldg-050-L","properties":{"name":"Rose Float Lab","ref":"050L","id":"bldg-050-L","ref_en":"50L","short_name":"Rose Float","scalerank":"4","building:levels":"1","start_date":"2007","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.671153,35.303998]}}
+,
+{"type":"Feature","id":"bldg-038-U","properties":{"name":"Josephine Sterns Playground","ref":"038U","id":"bldg-038-U","ref_en":"38U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.662699,35.302073]}}
+,
+{"type":"Feature","id":"bldg-060-0","properties":{"name":"Crandall Gymnasium","ref":"0600","id":"bldg-060-0","ref_en":"60","short_name":"Crandall Gym","alt_name":"Gymnasium, Crandall","scalerank":"3","building:levels":"2","start_date":"1928-4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664172,35.299503]}}
+,
+{"type":"Feature","id":"bldg-051-0","properties":{"name":"University House","ref":"0510","id":"bldg-051-0","ref_en":"51","short_name":"University House","scalerank":"3","building:levels":"2","start_date":"1928-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662517,35.298143]}}
+,
+{"type":"Feature","id":"bldg-056-R","properties":{"name":"Swine Unit Scales","ref":"056R","id":"bldg-056-R","ref_en":"56R","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.672664,35.312128]}}
+,
+{"type":"Feature","id":"bldg-192-0","properties":{"name":"Engineering IV","ref":"1920","id":"bldg-192-0","ref_en":"192","short_name":"Engineering IV","scalerank":"3","building:levels":"3","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665136,35.302747]}}
+,
+{"type":"Feature","id":"bldg-065-0","properties":{"name":"Julian A. McPhee University Union","ref":"0650","id":"bldg-065-0","ref_en":"65","short_name":"McPhee Union","alt_name":"University Union, Julian A. McPhee;McPhee University Union;Starbucks Coffee, UU;Ciao!;University Store;Yogurt Creations","scalerank":"2","building:levels":"2","start_date":"1971-3","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.658758,35.300276]}}
+,
+{"type":"Feature","id":"bldg-210-0","properties":{"name":"Indonesian Reservoir","ref":"2100","id":"bldg-210-0","ref_en":"210","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.661574,35.312704]}}
+,
+{"type":"Feature","id":"bldg-129-A","properties":{"name":"Avila Residence Garage / Apartment","ref":"129A","id":"bldg-129-A","ref_en":"129A","scalerank":"4","building:levels":"1","start_date":"1993-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65237,35.298939]}}
+,
+{"type":"Feature","id":"bldg-150-A","properties":{"name":"PSIC Cage Brooding House","ref":"150A","id":"bldg-150-A","ref_en":"150A","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.680246,35.311132]}}
+,
+{"type":"Feature","id":"bldg-018-F","properties":{"name":"Dairy Science Judging Pavilion","ref":"018F","id":"bldg-018-F","ref_en":"18F","scalerank":"4","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671731,35.30635]}}
+,
+{"type":"Feature","id":"bldg-070-0","properties":{"name":"Facilities","ref":"0700","id":"bldg-070-0","ref_en":"70","short_name":"Facilities","alt_name":"Warehouse, State Receiving","scalerank":"3","building:levels":"2","start_date":"1961-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659633,35.303918]}}
+,
+{"type":"Feature","id":"bldg-001-0","properties":{"name":"Administration","ref":"0010","id":"bldg-001-0","ref_en":"01","short_name":"Administration","scalerank":"2","building:levels":"4","start_date":"1964-11","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658642,35.300989]}}
+,
+{"type":"Feature","id":"bldg-122-R","properties":{"name":"Parker Truck Scales","ref":"122R","id":"bldg-122-R","ref_en":"122R","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.67818,35.307792]}}
+,
+{"type":"Feature","id":"bldg-016-0","properties":{"name":"Beef Unit","ref":"0160","id":"bldg-016-0","ref_en":"16","scalerank":"3","building:levels":"1","start_date":"1952","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663174,35.30695]}}
+,
+{"type":"Feature","id":"bldg-048-B","properties":{"name":"EHS Lath House","ref":"048B","id":"bldg-048-B","ref_en":"48B","scalerank":"4","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66348,35.30951]}}
+,
+{"type":"Feature","id":"bldg-113-D","properties":{"name":"Sierra Madre Hall Tower 3","ref":"113D","id":"bldg-113-D","ref_en":"113D","scalerank":"4","building:levels":"3","start_date":"1973-2","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654263,35.298759]}}
+,
+{"type":"Feature","id":"bldg-048-K","properties":{"name":"EHS Greenhouse","ref":"048K","id":"bldg-048-K","ref_en":"48K","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662739,35.308868]}}
+,
+{"type":"Feature","id":"bldg-004-R","properties":{"name":"Aero Storage","ref":"004R","id":"bldg-004-R","ref_en":"04R","scalerank":"4","building:levels":"1","start_date":"1970","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664434,35.305484]}}
+,
+{"type":"Feature","id":"bldg-042-U","properties":{"name":"Mott Physical Education Track","ref":"042U","id":"bldg-042-U","ref_en":"42U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.657247,35.297501]}}
+,
+{"type":"Feature","id":"bldg-137-0","properties":{"name":"Student Experimental Farm","ref":"1370","id":"bldg-137-0","ref_en":"137","short_name":"Experimental Farm","scalerank":"3","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.67324,35.309952]}}
+,
+{"type":"Feature","id":"bldg-162-0","properties":{"name":"Sports Complex Upper Fields","ref":"1620","id":"bldg-162-0","ref_en":"162","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.669449,35.310183]}}
+,
+{"type":"Feature","id":"bldg-056-K","properties":{"name":"Swine Unit New Farrowing Unit (M061)","ref":"056K","id":"bldg-056-K","ref_en":"56K","scalerank":"4","building:levels":"1","start_date":"2011-5","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.672856,35.312139]}}
+,
+{"type":"Feature","id":"bldg-125-0","properties":{"name":"Serrano Ranch","ref":"1250","id":"bldg-125-0","ref_en":"125","scalerank":"2","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660114,35.33446]}}
+,
+{"type":"Feature","id":"bldg-018-K","properties":{"name":"Dairy Science Freestall B","ref":"018K","id":"bldg-018-K","ref_en":"18K","scalerank":"4","building:levels":"1","start_date":"1992-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.674235,35.307645]}}
+,
+{"type":"Feature","id":"bldg-020-A","properties":{"name":"Bert and Candace Forbes Center for Engineering Excellence","ref":"020A","id":"bldg-020-A","ref_en":"20A","short_name":"Forbes Fac Off","scalerank":"4","building:levels":"2","start_date":"1992-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661555,35.300122]}}
+,
+{"type":"Feature","id":"bldg-070-D","properties":{"name":"Facility Services Welding Shop","ref":"070D","id":"bldg-070-D","ref_en":"70D","scalerank":"4","building:levels":"1","start_date":"1961-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660867,35.304401]}}
+,
+{"type":"Feature","id":"bldg-061-H","properties":{"name":"Mustang Memorial Plaza","ref":"061H","id":"bldg-061-H","ref_en":"61H","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.665123,35.29832]}}
+,
+{"type":"Feature","id":"bldg-114-K","properties":{"name":"Yosemite Hall Tower 9","ref":"114K","id":"bldg-114-K","ref_en":"114K","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.653385,35.297514]}}
+,
+{"type":"Feature","id":"bldg-162-D","properties":{"name":"Sports Complex Restroom","ref":"162D","id":"bldg-162-D","ref_en":"162D","scalerank":"4","building:levels":"1","start_date":"2001","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.668287,35.308084]}}
+,
+{"type":"Feature","id":"bldg-047-0","properties":{"name":"Faculty Offices North","ref":"0470","id":"bldg-047-0","ref_en":"47","short_name":"Fac Off North","scalerank":"3","building:levels":"3","start_date":"1980-12","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659941,35.302299]}}
+,
+{"type":"Feature","id":"bldg-153-H","properties":{"name":"589 Paseo Bella Montana","ref":"153H","id":"bldg-153-H","ref_en":"153H","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675799,35.29941]}}
+,
+{"type":"Feature","id":"bldg-006-0","properties":{"name":"Christopher Cohan Center","ref":"0060","id":"bldg-006-0","ref_en":"06","short_name":"Cohan Ctr","alt_name":"Performing Arts Center;PAC","scalerank":"3","building:levels":"4","start_date":"1996-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.657187,35.299284]}}
+,
+{"type":"Feature","id":"bldg-004-E","properties":{"name":"Aero Hazardous Material Storage","ref":"004E","id":"bldg-004-E","ref_en":"04E","scalerank":"4","building:levels":"1","start_date":"1956","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665334,35.305514]}}
+,
+{"type":"Feature","id":"bldg-018-P","properties":{"name":"Dairy Science North Pond","ref":"018P","id":"bldg-018-P","ref_en":"18P","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.670636,35.30792]}}
+,
+{"type":"Feature","id":"bldg-114-E","properties":{"name":"Yosemite Hall Tower 4","ref":"114E","id":"bldg-114-E","ref_en":"114E","scalerank":"4","building:levels":"3","start_date":"1969-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.65351,35.298019]}}
+,
+{"type":"Feature","id":"bldg-074-M","properties":{"name":"Building 74 Modulars (M064, M065)","ref":"074M","id":"bldg-074-M","ref_en":"74M","scalerank":"4","building:levels":"1","start_date":"2014-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660981,35.303136]}}
+,
+{"type":"Feature","id":"bldg-056-C","properties":{"name":"Swine Unit Fattening Unit","ref":"056C","id":"bldg-056-C","ref_en":"56C","scalerank":"4","building:levels":"1","start_date":"1970-11","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673203,35.312131]}}
+,
+{"type":"Feature","id":"bldg-050-J","properties":{"name":"Mount Bishop Warehouse","ref":"050J","id":"bldg-050-J","ref_en":"50J","scalerank":"4","building:levels":"1","start_date":"2005-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.671502,35.304489]}}
+,
+{"type":"Feature","id":"bldg-126-A","properties":{"name":"Chorro Creek Ranch Shop","ref":"126A","id":"bldg-126-A","ref_en":"126A","scalerank":"4","building:levels":"1","start_date":"1968","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.757621,35.332146]}}
+,
+{"type":"Feature","id":"bldg-126-T","properties":{"name":"Chorro Creek Ranch Storage","ref":"126T","id":"bldg-126-T","ref_en":"126T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.757191,35.332094]}}
+,
+{"type":"Feature","id":"bldg-070-A","properties":{"name":"Facility Services Warehouse","ref":"070A","id":"bldg-070-A","ref_en":"70A","scalerank":"4","building:levels":"2","start_date":"1975","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660182,35.304097]}}
+,
+{"type":"Feature","id":"bldg-160-A","properties":{"name":"Sports Complex Baseball Stadium, Lockers","ref":"160A","id":"bldg-160-A","ref_en":"160A","scalerank":"4","building:levels":"1","start_date":"2001","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.664797,35.307303]}}
+,
+{"type":"Feature","id":"bldg-213-A","properties":{"name":"Forrestry Steel Canopy","ref":"213A","id":"bldg-213-A","ref_en":"213A","scalerank":"4","start_date":"2011","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683694,35.31625]}}
+,
+{"type":"Feature","id":"bldg-162-F","properties":{"name":"Upper Fields Basketball Courts","ref":"162F","id":"bldg-162-F","ref_en":"162F","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.667519,35.3082]}}
+,
+{"type":"Feature","id":"bldg-163-H","properties":{"name":"Sports Complex North Scorekeepers Station","ref":"163H","id":"bldg-163-H","ref_en":"163H","scalerank":"3","building:levels":"1","start_date":"2005-6","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.66636,35.306218]}}
+,
+{"type":"Feature","id":"bldg-123-A","properties":{"name":"Peterson Ranch Residence 2","ref":"123A","id":"bldg-123-A","ref_en":"123A","scalerank":"4","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.650939,35.314363]}}
+,
+{"type":"Feature","id":"bldg-171-D","properties":{"name":"Dover","ref":"171D","id":"bldg-171-D","ref_en":"171D","short_name":"Dover","scalerank":"4","building:levels":"5","start_date":"2009-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.660012,35.308559]}}
+,
+{"type":"Feature","id":"bldg-223-0","properties":{"name":"Gibson Reservoir","ref":"2230","id":"bldg-223-0","ref_en":"223","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.750927,35.328922]}}
+,
+{"type":"Feature","id":"bldg-110-0","properties":{"name":"Tenaya Hall","ref":"1100","id":"bldg-110-0","ref_en":"110","short_name":"Tenaya","scalerank":"3","building:levels":"3","start_date":"1959-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.656497,35.29997]}}
+,
+{"type":"Feature","id":"bldg-122-U","properties":{"name":"Parker Pumphouse","ref":"122U","id":"bldg-122-U","ref_en":"122U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.675406,35.304332]}}
+,
+{"type":"Feature","id":"bldg-136-R","properties":{"name":"ITRC Restroom","ref":"136R","id":"bldg-136-R","ref_en":"136R","scalerank":"4","building:levels":"1","start_date":"2002","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660439,35.306688]}}
+,
+{"type":"Feature","id":"bldg-048-H","properties":{"name":"EHS Labs C & D","ref":"048H","id":"bldg-048-H","ref_en":"48H","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662611,35.309265]}}
+,
+{"type":"Feature","id":"bldg-170-A","properties":{"name":"Cerro Morro","ref":"170A","id":"bldg-170-A","ref_en":"170A","short_name":"Morro","scalerank":"4","building:levels":"6","start_date":"2003-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.656704,35.304322]}}
+,
+{"type":"Feature","id":"bldg-034-0","properties":{"name":"Walter F. Dexter Building","ref":"0340","id":"bldg-034-0","ref_en":"34","short_name":"Dexter","alt_name":"Dexter Building, Walter F.;Subway;Tacos To-Go Express","scalerank":"3","building:levels":"2","start_date":"1949-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663734,35.300875]}}
+,
+{"type":"Feature","id":"bldg-222-0","properties":{"name":"Johnson Reservoir","ref":"2220","id":"bldg-222-0","ref_en":"222","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.753241,35.328359]}}
+,
+{"type":"Feature","id":"bldg-213-0","properties":{"name":"Nelson Reservoir","ref":"2130","id":"bldg-213-0","ref_en":"213","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.68413,35.315396]}}
+,
+{"type":"Feature","id":"bldg-126-C","properties":{"name":"Chorro Creek Ranch Equipment Storage","ref":"126C","id":"bldg-126-C","ref_en":"126C","scalerank":"4","building:levels":"1","start_date":"1968","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.756961,35.332171]}}
+,
+{"type":"Feature","id":"bldg-033-0","properties":{"name":"Clyde P. Fisher Science Hall","ref":"0330","id":"bldg-033-0","ref_en":"33","short_name":"Fisher Science","alt_name":"Fisher Science, Clyde P.;Science, Fisher","scalerank":"3","building:levels":"4","start_date":"1977-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659296,35.302174]}}
+,
+{"type":"Feature","id":"bldg-161-B","properties":{"name":"Batting Cages 161 South","ref":"161B","id":"bldg-161-B","ref_en":"161B","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.666957,35.306895]}}
+,
+{"type":"Feature","id":"bldg-153-F","properties":{"name":"611 Paseo Bella Montana","ref":"153F","id":"bldg-153-F","ref_en":"153F","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675793,35.298868]}}
+,
+{"type":"Feature","id":"bldg-160-F","properties":{"name":"Sports Complex Maintenance Building","ref":"160F","id":"bldg-160-F","ref_en":"160F","scalerank":"4","building:levels":"1","start_date":"2003","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664346,35.305917]}}
+,
+{"type":"Feature","id":"bldg-154-A","properties":{"name":"Animal Nutrition Center","ref":"154A","id":"bldg-154-A","ref_en":"154A","short_name":"ANC","scalerank":"2","building:levels":"1","start_date":"2007","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.678157,35.311892]}}
+,
+{"type":"Feature","id":"bldg-208-0","properties":{"name":"Radio Transmitter Building","ref":"2080","id":"bldg-208-0","ref_en":"208","scalerank":"2","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673407,35.300538]}}
+,
+{"type":"Feature","id":"bldg-125-U","properties":{"name":"Serrano Ranch Ropes Course","ref":"125U","id":"bldg-125-U","ref_en":"125U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.662187,35.329961]}}
+,
+{"type":"Feature","id":"bldg-160-E","properties":{"name":"Batting Cages 160 South","ref":"160E","id":"bldg-160-E","ref_en":"160E","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.665728,35.306427]}}
+,
+{"type":"Feature","id":"bldg-032-L","properties":{"name":"Equine Center Mare Barn Northeast","ref":"032L","id":"bldg-032-L","ref_en":"32L","scalerank":"4","building:levels":"1","start_date":"2014-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66485,35.31084]}}
+,
+{"type":"Feature","id":"bldg-052-0","properties":{"name":"Science","ref":"0520","id":"bldg-052-0","ref_en":"52","short_name":"Science","scalerank":"3","building:levels":"1","start_date":"1955-11","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660092,35.300619]}}
+,
+{"type":"Feature","id":"bldg-053-0","properties":{"name":"Science North","ref":"0530","id":"bldg-053-0","ref_en":"53","short_name":"Science North","scalerank":"3","building:levels":"3","start_date":"1968-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.659835,35.302023]}}
+,
+{"type":"Feature","id":"bldg-042-A","properties":{"name":"Anderson Aquatic Center","ref":"042A","id":"bldg-042-A","ref_en":"42A","short_name":"Anderson Pool","scalerank":"4","building:levels":"1","start_date":"1959-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658686,35.298284]}}
+,
+{"type":"Feature","id":"bldg-123-0","properties":{"name":"Peterson Ranch","ref":"1230","id":"bldg-123-0","ref_en":"123","scalerank":"2","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.651086,35.314246]}}
+,
+{"type":"Feature","id":"bldg-016-V","properties":{"name":"Beef Unit","ref":"016V","id":"bldg-016-V","ref_en":"16V","short_name":"Beef Unit","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.662508,35.307007]}}
+,
+{"type":"Feature","id":"bldg-139-U","properties":{"name":"Walters Ranch Whale Rock Pump Station","ref":"139U","id":"bldg-139-U","ref_en":"139U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.756643,35.342594]}}
+,
+{"type":"Feature","id":"bldg-095-E","properties":{"name":"Bridge House","ref":"095E","id":"bldg-095-E","ref_en":"95E","scalerank":"4","building:levels":"1","start_date":"1965","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.653652,35.315199]}}
+,
+{"type":"Feature","id":"bldg-150-F","properties":{"name":"PSIC High Rise Lay House","ref":"150F","id":"bldg-150-F","ref_en":"150F","scalerank":"4","building:levels":"1","start_date":"1995-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679158,35.311095]}}
+,
+{"type":"Feature","id":"bldg-127-V","properties":{"name":"Escuela Ranch Property","ref":"127V","id":"bldg-127-V","ref_en":"127V","short_name":"Escuela Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.729737,35.355688]}}
+,
+{"type":"Feature","id":"bldg-057-A","properties":{"name":"Veterinary Hospital Annex","ref":"057A","id":"bldg-057-A","ref_en":"57A","scalerank":"4","building:levels":"1","start_date":"1953-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.670458,35.306086]}}
+,
+{"type":"Feature","id":"bldg-163-D","properties":{"name":"Sports Complex Lower Softball 1","ref":"163D","id":"bldg-163-D","ref_en":"163D","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.666541,35.30605]}}
+,
+{"type":"Feature","id":"bldg-136-A","properties":{"name":"ITRC Water Delivery Facility","ref":"136A","id":"bldg-136-A","ref_en":"136A","scalerank":"4","building:levels":"1","start_date":"2002","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660444,35.307087]}}
+,
+{"type":"Feature","id":"bldg-055-A","properties":{"name":"Beef Cattle Evaluation Center Residence","ref":"055A","id":"bldg-055-A","ref_en":"55A","scalerank":"4","building:levels":"1","start_date":"1972","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.679666,35.310122]}}
+,
+{"type":"Feature","id":"bldg-041-C","properties":{"name":"Aero Propulsion Lab","ref":"041C","id":"bldg-041-C","ref_en":"41C","scalerank":"4","building:levels":"1","start_date":"2005-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.666192,35.301942]}}
+,
+{"type":"Feature","id":"bldg-100-0","properties":{"name":"Shasta Hall","ref":"1000","id":"bldg-100-0","ref_en":"100","short_name":"Shasta","alt_name":"North Mountain Residence Halls","scalerank":"3","building:levels":"2","start_date":"1953-9","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.658711,35.302884]}}
+,
+{"type":"Feature","id":"bldg-117-T","properties":{"name":"CAD Research Center","ref":"117T","id":"bldg-117-T","ref_en":"117T","short_name":"CAD Center","scalerank":"4","building:levels":"1","start_date":"1997-2","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.664604,35.297041]}}
+,
+{"type":"Feature","id":"bldg-172-B","properties":{"name":"elewexe","ref":"172B","id":"bldg-172-B","ref_en":"172B","short_name":"lwx","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.654776,35.297719]}}
+,
+{"type":"Feature","id":"bldg-013-0","properties":{"name":"Engineering","ref":"0130","id":"bldg-013-0","ref_en":"13","short_name":"Engineering","scalerank":"3","building:levels":"2","start_date":"1985-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665489,35.301551]}}
+,
+{"type":"Feature","id":"bldg-139-V","properties":{"name":"Walters Ranch Property","ref":"139V","id":"bldg-139-V","ref_en":"139V","short_name":"Walters Ranch","scalerank":"1"},"geometry":{"type":"Point","coordinates":[-120.741003,35.346621]}}
+,
+{"type":"Feature","id":"bldg-127-C","properties":{"name":"Escuela Beef Center Hay Barn","ref":"127C","id":"bldg-127-C","ref_en":"127C","scalerank":"4","start_date":"2006-1-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.726453,35.347375]}}
+,
+{"type":"Feature","id":"bldg-371-B","properties":{"name":"University Housing Depot","ref":"371B","id":"bldg-371-B","ref_en":"371B","short_name":"Housing Depot","scalerank":"4","building:levels":"1","start_date":"2013","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.66074,35.309395]}}
+,
+{"type":"Feature","id":"bldg-153-L","properties":{"name":"528 Paseo Bella Montana","ref":"153L","id":"bldg-153-L","ref_en":"153L","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675183,35.298729]}}
+,
+{"type":"Feature","id":"bldg-048-D","properties":{"name":"EHS Tractor Barn","ref":"048D","id":"bldg-048-D","ref_en":"48D","scalerank":"4","building:levels":"1","start_date":"1969-3","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663145,35.309716]}}
+,
+{"type":"Feature","id":"bldg-095-A","properties":{"name":"Pole House","ref":"095A","id":"bldg-095-A","ref_en":"95A","scalerank":"4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.653031,35.314934]}}
+,
+{"type":"Feature","id":"bldg-056-G","properties":{"name":"Swine Unit Southwest Pens","ref":"056G","id":"bldg-056-G","ref_en":"56G","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.673656,35.311759]}}
+,
+{"type":"Feature","id":"bldg-008-T","properties":{"name":"Agricultural Engineering Paint Storage","ref":"008T","id":"bldg-008-T","ref_en":"08T","scalerank":"4","building:levels":"1","start_date":"1954-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661952,35.303647]}}
+,
+{"type":"Feature","id":"bldg-070-C","properties":{"name":"Facility Services Grounds Shop","ref":"070C","id":"bldg-070-C","ref_en":"70C","scalerank":"4","building:levels":"1","start_date":"1961-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.661084,35.304245]}}
+,
+{"type":"Feature","id":"bldg-153-G","properties":{"name":"599 Paseo Bella Montana","ref":"153G","id":"bldg-153-G","ref_en":"153G","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675812,35.299055]}}
+,
+{"type":"Feature","id":"bldg-024-A","properties":{"name":"Food Processing Annex","ref":"024A","id":"bldg-024-A","ref_en":"24A","scalerank":"4","building:levels":"1","start_date":"1961-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.663363,35.303774]}}
+,
+{"type":"Feature","id":"bldg-271-0","properties":{"name":"Village Drive Parking Structure","ref":"2710","id":"bldg-271-0","ref_en":"271","short_name":"Village Parking","scalerank":"2","building:levels":"5","start_date":"2008-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.66034213596,35.30611313884]}}
+,
+{"type":"Feature","id":"bldg-172-A","properties":{"name":"tsɨtkawayu","ref":"172A","id":"bldg-172-A","ref_en":"172A","short_name":"tkw","scalerank":"4","building":"residential","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.655294,35.297861]}}
+,
+{"type":"Feature","id":"bldg-032-H","properties":{"name":"Equine Center Hay Barn","ref":"032H","id":"bldg-032-H","ref_en":"32H","scalerank":"4","building:levels":"1","start_date":"2002","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664625,35.311239]}}
+,
+{"type":"Feature","id":"bldg-128-B","properties":{"name":"Orchard House","ref":"128B","id":"bldg-128-B","ref_en":"128B","scalerank":"4","building:levels":"1","start_date":"1962-8","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.667096,35.300087]}}
+,
+{"type":"Feature","id":"bldg-070-F","properties":{"name":"Facility Services Plumbing Shop","ref":"070F","id":"bldg-070-F","ref_en":"70F","scalerank":"4","building:levels":"1","start_date":"1947","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.660548,35.304078]}}
+,
+{"type":"Feature","id":"bldg-019-A","properties":{"name":"Sandwich Factory","ref":"019A","id":"bldg-019-A","ref_en":"19A","short_name":"Sandwich Factory","scalerank":"4","building:levels":"1","start_date":"1970-9","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.660032,35.299855]}}
+,
+{"type":"Feature","id":"bldg-116-0","properties":{"name":"Jespersen Hall","ref":"1160","id":"bldg-116-0","ref_en":"116","short_name":"Jespersen","scalerank":"3","building:levels":"2","start_date":"1929","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664469,35.297719]}}
+,
+{"type":"Feature","id":"bldg-004-C","properties":{"name":"Public Safety Lab","ref":"004C","id":"bldg-004-C","ref_en":"04C","scalerank":"4","building:levels":"1","start_date":"1970","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.664523,35.305379]}}
+,
+{"type":"Feature","id":"bldg-163-B","properties":{"name":"Sports Complex Lower Soccer 5","ref":"163B","id":"bldg-163-B","ref_en":"163B","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.667563,35.306002]}}
+,
+{"type":"Feature","id":"bldg-043-0","properties":{"name":"Recreation Center","ref":"0430","id":"bldg-043-0","ref_en":"43","short_name":"Recreation Center","scalerank":"2","building:levels":"2","start_date":"2012","building":"university","operator":"Associated Students, Inc."},"geometry":{"type":"Point","coordinates":[-120.659807,35.298325]}}
+,
+{"type":"Feature","id":"bldg-371-0","properties":{"name":"Canyon Circle Parking Structure","ref":"3710","id":"bldg-371-0","ref_en":"371","short_name":"Canyon Parking","scalerank":"2","building:levels":"5","start_date":"2009-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65971287263,35.30952774481]}}
+,
+{"type":"Feature","id":"bldg-095-D","properties":{"name":"Underground House","ref":"095D","id":"bldg-095-D","ref_en":"95D","scalerank":"4","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.653137,35.31621]}}
+,
+{"type":"Feature","id":"bldg-057-B","properties":{"name":"Veterinary Hospital Post Mortem Area","ref":"057B","id":"bldg-057-B","ref_en":"57B","scalerank":"4","start_date":"2006","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.670483,35.306165]}}
+,
+{"type":"Feature","id":"bldg-127-A","properties":{"name":"Escuela Ranch Pole Barn","ref":"127A","id":"bldg-127-A","ref_en":"127A","scalerank":"4","building:levels":"1","start_date":"1975","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.72665,35.34752]}}
+,
+{"type":"Feature","id":"bldg-008-A","properties":{"name":"Bioresource and Agricultural Engineering Shop","ref":"008A","id":"bldg-008-A","ref_en":"08A","short_name":"Ag Engineering Shop","alt_name":"Agricultural Engineering Shop","scalerank":"4","building:levels":"2","start_date":"1954-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.662218,35.303162]}}
+,
+{"type":"Feature","id":"bldg-155-0","properties":{"name":"J & G Lau Family Meat Processing Center","ref":"1550","id":"bldg-155-0","ref_en":"155","short_name":"Meat Processing","scalerank":"2","building:levels":"1","start_date":"2011-7","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.68093,35.31436]}}
+,
+{"type":"Feature","id":"bldg-153-P","properties":{"name":"657 Paseo Bella Montana","ref":"153P","id":"bldg-153-P","ref_en":"153P","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.675554,35.299571]}}
+,
+{"type":"Feature","id":"bldg-131-0","properties":{"name":"Parking Structure 131","ref":"1310","id":"bldg-131-0","ref_en":"131","scalerank":"2","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.655828,35.297713]}}
+,
+{"type":"Feature","id":"bldg-017-G","properties":{"name":"Crop Science West Greenhouse","ref":"017G","id":"bldg-017-G","ref_en":"17G","scalerank":"4","building:levels":"1","start_date":"2006","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.669302,35.302316]}}
+,
+{"type":"Feature","id":"bldg-121-U","properties":{"name":"Cheda Ranch Pole Barn North","ref":"121U","id":"bldg-121-U","ref_en":"121U","scalerank":"4","start_date":"1965","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.683277,35.313447]}}
+,
+{"type":"Feature","id":"bldg-127-B","properties":{"name":"Escuela Storage","ref":"127B","id":"bldg-127-B","ref_en":"127B","scalerank":"4","start_date":"2006-1-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.72647,35.347644]}}
+,
+{"type":"Feature","id":"bldg-056-T","properties":{"name":"Swine Unit West Pond","ref":"056T","id":"bldg-056-T","ref_en":"56T","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.672582,35.311123]}}
+,
+{"type":"Feature","id":"bldg-137-C","properties":{"name":"Student Experimental Farm Straw Bale Building","ref":"137C","id":"bldg-137-C","ref_en":"137C","scalerank":"4","building:levels":"1","start_date":"2000","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.673113,35.310363]}}
+,
+{"type":"Feature","id":"bldg-213-B","properties":{"name":"Forrestry Shed","ref":"213B","id":"bldg-213-B","ref_en":"213B","scalerank":"4","start_date":"2011","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.68343,35.315945]}}
+,
+{"type":"Feature","id":"bldg-018-N","properties":{"name":"Dairy Science Methane Generation Pond","ref":"018N","id":"bldg-018-N","ref_en":"18N","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.673368,35.306665]}}
+,
+{"type":"Feature","id":"bldg-034-B","properties":{"name":"Tapangos","ref":"034B","id":"bldg-034-B","ref_en":"34B","scalerank":"4","building:levels":"1","start_date":"1992","building":"university","operator":"Cal Poly Corporation"},"geometry":{"type":"Point","coordinates":[-120.662915,35.301174]}}
+,
+{"type":"Feature","id":"bldg-209-0","properties":{"name":"Drumm Reservoir","ref":"2090","id":"bldg-209-0","ref_en":"209","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.661162,35.306984]}}
+,
+{"type":"Feature","id":"bldg-127-D","properties":{"name":"Escuela Beef Center","ref":"127D","id":"bldg-127-D","ref_en":"127D","scalerank":"4","start_date":"2006","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.723668,35.346944]}}
+,
+{"type":"Feature","id":"bldg-061-I","properties":{"name":"Mustang Memorial Field","ref":"061I","id":"bldg-061-I","ref_en":"61I","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.665167,35.297652]}}
+,
+{"type":"Feature","id":"bldg-163-C","properties":{"name":"Sports Complex Lower Soccer 6","ref":"163C","id":"bldg-163-C","ref_en":"163C","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.665596,35.304335]}}
+,
+{"type":"Feature","id":"bldg-041-A","properties":{"name":"Grant M. Brown Engineering Building","ref":"041A","id":"bldg-041-A","ref_en":"41A","short_name":"Brown Eng","scalerank":"4","building:levels":"2","start_date":"2002-10","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.665988,35.302538]}}
+,
+{"type":"Feature","id":"bldg-153-S","properties":{"name":"533 Paseo Bella Montana","ref":"153S","id":"bldg-153-S","ref_en":"153S","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.67504,35.298988]}}
+,
+{"type":"Feature","id":"bldg-075-0","properties":{"name":"Mustang Substation","ref":"0750","id":"bldg-075-0","ref_en":"75","scalerank":"4","building:levels":"1","start_date":"1966-6","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.658232,35.303874]}}
+,
+{"type":"Feature","id":"bldg-055-U","properties":{"name":"Beef Cattle Evaluation Center Feed Storage","ref":"055U","id":"bldg-055-U","ref_en":"55U","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.679652,35.31051]}}
+,
+{"type":"Feature","id":"bldg-162-A","properties":{"name":"Sports Complex Upper Soccer 1","ref":"162A","id":"bldg-162-A","ref_en":"162A","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.670262,35.310351]}}
+,
+{"type":"Feature","id":"bldg-048-O","properties":{"name":"EHS Patio Cover","ref":"048O","id":"bldg-048-O","ref_en":"48O","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.663459,35.30889]}}
+,
+{"type":"Feature","id":"bldg-153-A","properties":{"name":"499 Paseo Bella Montana","ref":"153A","id":"bldg-153-A","ref_en":"153A","scalerank":"4","start_date":"2006-12","building":"house","operator":"California Polytechnic State University","residential":"university"},"geometry":{"type":"Point","coordinates":[-120.67494,35.298258]}}
+,
+{"type":"Feature","id":"bldg-123-D","properties":{"name":"Peterson Shed","ref":"123D","id":"bldg-123-D","ref_en":"123D","scalerank":"4","building:levels":"1","start_date":"1950","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.650966,35.314022]}}
+,
+{"type":"Feature","id":"bldg-150-O","properties":{"name":"PSIC Silos G","ref":"150O","id":"bldg-150-O","ref_en":"150O","scalerank":"4"},"geometry":{"type":"Point","coordinates":[-120.678945,35.311263]}}
+,
+{"type":"Feature","id":"bldg-126-0","properties":{"name":"Chorro Creek Ranch","ref":"1260","id":"bldg-126-0","ref_en":"126","scalerank":"2","building:levels":"1","start_date":"1968","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.744431,35.332922]}}
+,
+{"type":"Feature","id":"bldg-163-A","properties":{"name":"Sports Complex Lower Soccer 4","ref":"163A","id":"bldg-163-A","ref_en":"163A","scalerank":"3"},"geometry":{"type":"Point","coordinates":[-120.665992,35.305079]}}
+,
+{"type":"Feature","id":"bldg-045-M","properties":{"ref":"045M","id":"bldg-045-M","ref_en":"45M","name":"Band Storage Modular (M070)","scalerank":"4","start_date":"2015-9","building":"university","operator":"California Polytechnic State University"},"geometry":{"type":"Point","coordinates":[-120.65758143323,35.29881438706]}}
+,
+{"type":"Feature","id":"bldg-153-0","properties":{"ref":"1530","id":"bldg-153-0","ref_en":"153","name":"Bella Montana","short_name":"Bella Montana","scalerank":"1","building:levels":"2","start_date":"2006-12"},"geometry":{"type":"Point","coordinates":[-120.67528602438,35.29866881287]}}
+,
+{"type":"Feature","id":"bldg-170-0","properties":{"ref":"1700","id":"bldg-170-0","ref_en":"170","name":"Cerro Vista Apartments","short_name":"Cerro Vista","scalerank":"2","building:levels":"4","start_date":"2003-9"},"geometry":{"type":"Point","coordinates":[-120.65697181741,35.30495487582]}}
+,
+{"type":"Feature","id":"bldg-171-0","properties":{"ref":"1710","id":"bldg-171-0","ref_en":"171","name":"Poly Canyon Village","short_name":"Poly Canyon Village","scalerank":"2","building:levels":"5","start_date":"2009-6"},"geometry":{"type":"Point","coordinates":[-120.65877761463,35.30804912523]}}
+,
+{"type":"Feature","id":"bldg-160-0","properties":{"ref":"1600","id":"bldg-160-0","ref_en":"160","name":"Baggett Stadium","short_name":"Baggett Stadium","alt_name":"Baseball Stadium;Sports Complex Baseball Stadium","scalerank":"2","building:levels":"1","start_date":"2001"},"geometry":{"type":"Point","coordinates":[-120.66498022298,35.306765364]}}
+,
+{"type":"Feature","id":"bldg-161-0","properties":{"ref":"1610","id":"bldg-161-0","ref_en":"161","name":"Bob Janssen Field","short_name":"Janssen Field","alt_name":"Softball Stadium;Sports Complex Softball Stadium;Janssen Field","scalerank":"2","building:levels":"1","start_date":"2001"},"geometry":{"type":"Point","coordinates":[-120.66660027722,35.30726004678]}}
+,
+{"type":"Feature","id":"bldg-172-0","properties":{"name":"yakʔitʸutʸu","ref":"1720","id":"bldg-172-0","ref_en":"172","short_name":"ytt","scalerank":"2"},"geometry":{"type":"Point","coordinates":[-120.6548395859,35.29717081892]}}]}
