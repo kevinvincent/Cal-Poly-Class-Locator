@@ -115,13 +115,22 @@
       };
 
       function getName(feature) {
-        return feature.properties.department.trim() + " " + feature.properties.courseNumber.trim() + "-" + feature.properties.sectionNumber.trim() + ": " + feature.properties.courseName.trim();
+        if(!feature.properties.classNumber) {
+          return feature.properties.ref_en + ": " + feature.properties.name;
+        } else {
+          return feature.properties.department.trim() + " " + feature.properties.courseNumber.trim() + "-" + feature.properties.sectionNumber.trim() + ": " + feature.properties.courseName.trim();
+        }
       }
 
       function getDescription(feature) {
-        return "<b>" + getName(feature) + "</b></br>" + 
-               "Building: " + feature.properties.bldgName.trim() + "<br/>" +
-               "Room: " + feature.properties.room.trim(); 
+        if(!feature.properties.classNumber) {
+          return "<b>" + getName(feature) + "</b></br>" +
+                 (feature.properties.alt_name ? "Known as: "+feature.properties.alt_name.split(";").join(" | ") : "")
+        } else {
+          return "<b>" + getName(feature) + "</b></br>" + 
+                 "Building: " + feature.properties.bldgName.trim() + "<br/>" +
+                 "Room: " + feature.properties.room.trim();
+        }
       }
 
       $.getJSON("geo.json",function(sections){
@@ -263,14 +272,18 @@
                 }
                 map.fitBounds(bounds, { maxZoom: 17, padding: 100});
 
-                if(filtered.length === 1) {
+                if(filtered.sections.length + filtered.buildings.length === 1) {
                   map.on('moveend', function(e){
-                    showDescriptionPopup(filtered[0]);
+                    showDescriptionPopup(filtered.sections.length == 1 ? filtered.sections[0] : filtered.buildings[0]);
                   });
                 }
               }
 
               map.on('click', 'sections', function (e) {
+                showDescriptionPopup(e.features[0]);
+              });
+              
+              map.on('click', 'buildings', function (e) {
                 showDescriptionPopup(e.features[0]);
               });
                 
@@ -299,7 +312,7 @@
               selectData = selectData.concat($.map(buildings.features, function (obj, index) {
                 return {
                   type: "buildings",
-                  name: obj.properties.ref_en + ": " + obj.properties.name,
+                  name: getName(obj),
                   id: "buildings-"+index
                 }
               }))
