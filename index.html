@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
 
   <style>
+
     #map {
       position: absolute;
       top: 0px;
@@ -325,36 +326,27 @@
             map.fitBounds(bounds, { maxZoom: 17, padding: 100 });
 
             if (filtered.sections.length + filtered.buildings.length + filtered.classrooms.length === 1) {
-              map.on('moveend', function(e) {
+              map.on("moveend",function() {
                 showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
-              });
+              })
             }
           }
 
           map.on('click', 'sections', function(e) {
+            map.flyTo({ center: e.features[0].geometry.coordinates });
             showDescriptionPopup(e.features[0]);
           });
 
           map.on('click', 'buildings', function(e) {
+            map.flyTo({ center: e.features[0].geometry.coordinates });
             showDescriptionPopup(e.features[0]);
           });
           
           map.on('click', 'classrooms', function(e) {
+            map.flyTo({ center: e.features[0].geometry.coordinates });
             showDescriptionPopup(e.features[0]);
           });
 
-          map.on('click', 'sections', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-          });
-          
-          map.on('click', 'buildings', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-          });
-          
-          map.on('click', 'classrooms', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-          });
-          
           // Change the cursor to a pointer when the mouse is over the sections layer.
           map.on('mouseenter', 'sections', function() {
             map.getCanvas().style.cursor = 'pointer';
@@ -392,9 +384,9 @@
           var selectize = $('#filter-input').selectize({
             options: selectData,
             optgroups: [
-              { $order: 3, type: 'classrooms', name: 'Classrooms' },
-              { $order: 2, type: 'buildings', name: 'Buildings' },
-              { $order: 1, type: 'sections', name: 'Sections' }
+              { $order: 2, type: 'classrooms', name: 'Classrooms' },
+              { $order: 1, type: 'buildings', name: 'Buildings' },
+              { $order: 3, type: 'sections', name: 'Sections' }
             ],
             valueField: 'id',
             labelField: 'name',
@@ -408,7 +400,7 @@
               }
             },
             maxOptions: 30,
-            onType: debounce(250, function(text) {
+            onType: debounce(100, function(text) {
 
               var filtered = {
                 "buildings": [],
@@ -416,7 +408,7 @@
                 "classrooms": []
               }
 
-              this.currentResults.items.forEach(function(item) {
+              this.currentResults.items.slice(0, this.settings.maxOptions).forEach(function(item) {
                 var type = item.id.split("-")[0];
                 var index = parseInt(item.id.split("-")[1]);
                 if (type === "buildings") {
@@ -431,7 +423,7 @@
               displayFilteredMap(filtered);
 
             }),
-            onChange: debounce(250, function(id) {
+            onChange: debounce(100, function(id) {
 
               var filtered = {
                 "buildings": [],
