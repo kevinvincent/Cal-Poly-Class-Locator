@@ -156,10 +156,16 @@
         return "<b>" + getName(feature) + "</b></br>" +
           (feature.properties.alt_name ? "<b>Known as:</b> " + feature.properties.alt_name.split(";").join(" | ") : "")
       } else if(feature.properties.type === "sections") {
+        if(feature.properties.room.startsWith("0")) {
+          feature.properties.room = feature.properties.room.substr(1);
+        }
         return "<b>" + getName(feature) + "</b></br>" +
           "Building: " + feature.properties.bldgName.trim() + "<br/>" +
           "Room: " + feature.properties.room.trim();
       } else if(feature.properties.type === "classrooms") {
+        if(feature.properties.room.startsWith("0")) {
+          feature.properties.room = feature.properties.room.substr(1);
+        }
         return "<b>" + getName(feature) + "</b></br>" +
                "Building: " + feature.properties.bldgName.trim() + "<br/>" +
                "Room: " + feature.properties.room.trim();
