@@ -18,6 +18,13 @@
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
 
   <style>
 
@@ -111,15 +118,8 @@
 
 <body>
 
-  <select class="input" id='filter-input' type='text' name='filter' placeholder='Try POLS 334-01, Engineering IV, 14-301' autocomplete="off"></select>
+  <select class="input" id='filter-input' type='text' style="visibility: hidden;" name='filter' placeholder='Try POLS 334-01, Engineering IV, 14-301' autocomplete="off"></select>
   <div id='map'></div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
 
   <script>
     function debounce(wait, func, immediate) {
@@ -284,10 +284,8 @@
             }
           });
           
-          map.setFilter('sections', ['match', ['get', 'classNumber'], ["NULL"], true, false]);
-          map.setFilter('buildings', ['match', ['get', 'ref'], ["NULL"], true, false]);
-          map.setFilter('classrooms', ['match', ['get', 'roomRef'], ["NULL"], true, false]);
-
+          clearMap();
+        
           var lastPopup = null;
 
           function showDescriptionPopup(feature) {
@@ -298,10 +296,17 @@
               lastPopup.remove();
             }
             
-            lastPopup = new mapboxgl.Popup({ offset: [0, -10], className: "animated fadeIn" })
+            lastPopup = new mapboxgl.Popup({ offset: [0, -10], className: "animated fadeIn"})
               .setLngLat(coordinates)
               .setHTML(description)
               .addTo(map);
+              
+          }
+          
+          function clearMap() {
+            map.setFilter('sections', ['match', ['get', 'classNumber'], ["NULL"], true, false]);
+            map.setFilter('buildings', ['match', ['get', 'ref'], ["NULL"], true, false]);
+            map.setFilter('classrooms', ['match', ['get', 'roomRef'], ["NULL"], true, false]);
           }
 
           function displayFilteredMap(filtered) {
@@ -342,9 +347,7 @@
             map.fitBounds(bounds, { maxZoom: 17, padding: 100 });
 
             if (filtered.sections.length + filtered.buildings.length + filtered.classrooms.length === 1) {
-              map.on("moveend",function() {
-                showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
-              })
+              showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
             }
           }
 
@@ -446,28 +449,32 @@
             }),
             onChange: debounce(500, function(id) {
               
+              clearMap();
+              
               if (lastPopup) {
                 lastPopup.remove();
               }
-
-              var filtered = {
-                "buildings": [],
-                "sections": [],
-                "classrooms": []
+      
+              if(id) {
+                var filtered = {
+                  "buildings": [],
+                  "sections": [],
+                  "classrooms": []
+                }
+  
+                var type = id.split("-")[0];
+                var index = parseInt(id.split("-")[1]);
+                if (type === "buildings") {
+                  filtered.buildings.push(buildings.features[index]);
+                }
+                else if (type === "sections") {
+                  filtered.sections.push(sections.features[index]);
+                } else if (type === "classrooms") {
+                  filtered.classrooms.push(classrooms.features[index]);
+                }
+  
+                displayFilteredMap(filtered)
               }
-
-              var type = id.split("-")[0];
-              var index = parseInt(id.split("-")[1]);
-              if (type === "buildings") {
-                filtered.buildings.push(buildings.features[index]);
-              }
-              else if (type === "sections") {
-                filtered.sections.push(sections.features[index]);
-              } else if (type === "classrooms") {
-                filtered.classrooms.push(classrooms.features[index]);
-              }
-
-              displayFilteredMap(filtered)
             })
           });
         });
