@@ -76,7 +76,6 @@
     }
 
     /* Max Height Dropdown */
-
     .selectize-dropdown,
     .selectize-dropdown.form-control {
       max-height: 30vh !important;
@@ -84,6 +83,19 @@
 
     .selectize-dropdown-content {
       max-height: 30vh !important;
+    }
+    
+    @media (min-width: 1025px) {
+  
+      .selectize-dropdown,
+      .selectize-dropdown.form-control {
+        max-height: calc(100vh - 200px) !important;
+      }
+  
+      .selectize-dropdown-content {
+        max-height: calc(100vh - 200px) !important;
+      }
+      
     }
 
     .animated {
@@ -398,6 +410,7 @@
             optgroupField: 'type',
             optgroupLabelField: 'name',
             optgroupValueField: 'type',
+            lockOptgroupOrder: true,
             render: {
               optgroup_header: function(data, escape) {
                 return '<div class="optgroup-header">' + escape(data.name) + '</div>';
