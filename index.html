@@ -131,6 +131,9 @@
       } else if(feature.properties.type === "sections") {
         return feature.properties.department.trim() + " " + feature.properties.courseNumber.trim() + "-" + feature.properties.sectionNumber.trim() + ": " + feature.properties.courseName.trim();
       } else if(feature.properties.type === "classrooms") {
+        if(feature.properties.room.startsWith("0")) {
+          feature.properties.room = feature.properties.room.substr(1);
+        }
         return feature.properties.bldg + "-" + feature.properties.room;
       }
     }
@@ -405,7 +408,7 @@
               }
             },
             maxOptions: 30,
-            onType: debounce(500, function(text) {
+            onType: debounce(250, function(text) {
 
               var filtered = {
                 "buildings": [],
@@ -428,7 +431,7 @@
               displayFilteredMap(filtered);
 
             }),
-            onChange: function(id) {
+            onChange: debounce(250, function(id) {
 
               var filtered = {
                 "buildings": [],
@@ -448,7 +451,7 @@
               }
 
               displayFilteredMap(filtered)
-            }
+            })
           });
         });
       });
@@ -458,3 +461,18 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
