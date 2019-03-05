@@ -271,6 +271,10 @@
               "icon-allow-overlap": true
             }
           });
+          
+          map.setFilter('sections', ['match', ['get', 'classNumber'], ["NULL"], true, false]);
+          map.setFilter('buildings', ['match', ['get', 'ref'], ["NULL"], true, false]);
+          map.setFilter('classrooms', ['match', ['get', 'roomRef'], ["NULL"], true, false]);
 
           var lastPopup = null;
 
@@ -400,7 +404,11 @@
               }
             },
             maxOptions: 30,
-            onType: debounce(250, function(text) {
+            onType: debounce(500, function(text) {
+              
+              if (lastPopup) {
+                lastPopup.remove();
+              }
 
               var filtered = {
                 "buildings": [],
@@ -423,7 +431,11 @@
               displayFilteredMap(filtered);
 
             }),
-            onChange: debounce(250, function(id) {
+            onChange: debounce(500, function(id) {
+              
+              if (lastPopup) {
+                lastPopup.remove();
+              }
 
               var filtered = {
                 "buildings": [],
