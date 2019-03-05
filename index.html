@@ -71,10 +71,19 @@
       .selectize-dropdown-content > .option {
         padding: 5px 15px 5px 15px;
       }
+      
+      /* Max Height Dropdown */
+      .selectize-dropdown, .selectize-dropdown.form-control{
+          max-height: 30vh !important;
+      }
+      
+      .selectize-dropdown-content{
+          max-height: 30vh !important;
+      }
 
       .animated {
-        -webkit-animation-duration: 0.6s;
-        animation-duration: 0.6s;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
       }
@@ -141,9 +150,9 @@
           var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
-            center: [-120.6625, 35.3050],
+            center: [-120.661090, 35.300559],
             pitch: 20,
-            zoom: 15
+            zoom: 16
           });
 
           map.loadImage("marker.png", function(error, image) {
@@ -224,7 +233,7 @@
                   "icon-allow-overlap": true
                 }
               });
-
+              
               var lastPopup = null;
               function showDescriptionPopup(feature) {
                 var coordinates = feature.geometry.coordinates.slice();
@@ -320,8 +329,8 @@
               var selectize = $('#filter-input').selectize({
                 options: selectData,
                 optgroups: [
-                  {$order: 2, type: 'sections', name: 'Sections'},
-                  {$order: 1, type: 'buildings', name: 'Buildings'}
+                  {$order: 2, type: 'buildings', name: 'Buildings'},
+                  {$order: 1, type: 'sections', name: 'Sections'}
                 ],
                 valueField: 'id',
                 labelField: 'name',
