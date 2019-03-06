@@ -72,6 +72,16 @@
       height: 70px;
     }
     
+    .selectize-input .option .subname,.name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    
+    .selectize-input .option {
+      width: calc(100vw - 110px);
+    }
+    
     #filter-input-selectized {
       top: 12px;
       position: relative;
@@ -176,11 +186,11 @@
     
     function getItemSubname(feature) {
       if (!feature.properties.type) {
-        return feature.properties.name;
+        return feature.properties.name +  (feature.properties.alt_name ? ", " + feature.properties.alt_name.split(";").join(", ") : "");
       } else if(feature.properties.type === "sections") {
         return feature.properties.courseName.trim();
       } else if(feature.properties.type === "classrooms") {
-        return feature.properties.bldgName
+        return feature.properties.bldgName;
       }
     }
 
