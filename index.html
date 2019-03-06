@@ -180,13 +180,13 @@
 
     var sections, buildings, classrooms;
     $.when(
-      $.getJSON("sections.json", function(data) {
+      $.getJSON("dataset/sections.json", function(data) {
         sections = data;
       }),
-      $.getJSON("buildings.json", function(data) {
+      $.getJSON("dataset/buildings.json", function(data) {
         buildings = data;
       }),
-      $.getJSON("classrooms.json", function(data) {
+      $.getJSON("dataset/classrooms.json", function(data) {
         classrooms = data;
       })
     ).then(function() {
@@ -201,7 +201,7 @@
         zoom: 16
       });
 
-      map.loadImage("marker.png", function(error, image) {
+      map.loadImage("img/marker.png", function(error, image) {
         map.addImage("custom-marker", image);
 
         map.addControl(new mapboxgl.GeolocateControl({
