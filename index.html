@@ -244,14 +244,14 @@
       map.loadImage("img/marker.png", function(error, image) {
         map.addImage("custom-marker", image);
 
+        map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+        
         map.addControl(new mapboxgl.GeolocateControl({
           positionOptions: {
             enableHighAccuracy: true
           },
           trackUserLocation: true
         }), "bottom-right");
-
-        map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
 
         map.on('load', function() {
 
