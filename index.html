@@ -21,6 +21,7 @@
 
   <!-- Selectize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/selectize-plugin-clear.css" />
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
@@ -68,6 +69,18 @@
       width: calc(100% - 20px);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.40);
       padding: 15px;
+      height: 70px;
+    }
+    
+    #filter-input-selectized {
+      top: 12px;
+      position: relative;
+    }
+    
+    .selectize-control.plugin-clear_button .clearAll {
+      top: 23px;
+      width: 40px;
+      text-align: center;
     }
 
     .selectize-dropdown {
@@ -126,6 +139,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+  <script src="js/selectize-plugin-clear.js"></script>
+  <script src="js/selectize-plugin-preserve-search.js"></script>
 
   <script>
     function debounce(wait, func, immediate) {
@@ -452,6 +467,7 @@
             optgroupLabelField: 'name',
             optgroupValueField: 'type',
             lockOptgroupOrder: true,
+            plugins: ["clear_button"],
             render: {
               optgroup_header: function(data, escape) {
                 return '<div class="optgroup-header">' + escape(data.name) + '</div>';
@@ -498,14 +514,16 @@
 
             }),
             onChange: debounce(500, function(id) {
-              
-              clearMap();
-              
-              if (lastPopup) {
-                lastPopup.remove();
-              }
       
               if(id) {
+
+                $("#filter-input-selectized").prop('disabled', true);
+                
+                clearMap();
+                if (lastPopup) {
+                  lastPopup.remove();
+                }
+                
                 var filtered = {
                   "buildings": [],
                   "sections": [],
@@ -524,6 +542,14 @@
                 }
   
                 displayFilteredMap(filtered)
+              } else {
+                
+                $("#filter-input-selectized").prop('disabled', false);
+
+                clearMap()
+                if (lastPopup) {
+                  lastPopup.remove();
+                }
               }
             })
           });
