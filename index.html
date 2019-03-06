@@ -143,6 +143,29 @@
         if (callNow) func.apply(context, args);
       };
     };
+    
+    function getItemName(feature) {
+      if (!feature.properties.type) {
+        return feature.properties.ref_en;
+      } else if(feature.properties.type === "sections") {
+        return feature.properties.department.trim() + " " + feature.properties.courseNumber.trim() + "-" + feature.properties.sectionNumber.trim();
+      } else if(feature.properties.type === "classrooms") {
+        if(feature.properties.room.startsWith("0")) {
+          feature.properties.room = feature.properties.room.substr(1);
+        }
+        return feature.properties.bldg + "-" + feature.properties.room;
+      }
+    }
+    
+    function getItemSubname(feature) {
+      if (!feature.properties.type) {
+        return feature.properties.name;
+      } else if(feature.properties.type === "sections") {
+        return feature.properties.courseName.trim();
+      } else if(feature.properties.type === "classrooms") {
+        return feature.properties.bldgName
+      }
+    }
 
     function getName(feature) {
       if (!feature.properties.type) {
@@ -391,7 +414,8 @@
           var selectData = $.map(sections.features, function(obj, index) {
             return {
               type: "sections",
-              name: getName(obj),
+              name: getItemName(obj),
+              subname: getItemSubname(obj),
               id: "sections-" + index
             }
           });
@@ -399,7 +423,8 @@
           selectData = selectData.concat($.map(buildings.features, function(obj, index) {
             return {
               type: "buildings",
-              name: getName(obj),
+              name: getItemName(obj),
+              subname: getItemSubname(obj),
               id: "buildings-" + index
             }
           }))
@@ -407,7 +432,8 @@
           selectData = selectData.concat($.map(classrooms.features, function(obj, index) {
             return {
               type: "classrooms",
-              name: getName(obj),
+              name: getItemName(obj),
+              subname: getItemSubname(obj),
               id: "classrooms-" + index
             }
           }))
@@ -421,7 +447,7 @@
             ],
             valueField: 'id',
             labelField: 'name',
-            searchField: ['name'],
+            searchField: ['name','subname'],
             optgroupField: 'type',
             optgroupLabelField: 'name',
             optgroupValueField: 'type',
@@ -429,6 +455,18 @@
             render: {
               optgroup_header: function(data, escape) {
                 return '<div class="optgroup-header">' + escape(data.name) + '</div>';
+              },
+              item: function(item, escape) {
+                  return '<div class="option">' +
+                      (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
+                      (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
+                  '</div>';
+              },
+              option: function(item, escape) {
+                  return '<div class="option">' +
+                      (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
+                      (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
+                  '</div>';
               }
             },
             maxOptions: 30,
