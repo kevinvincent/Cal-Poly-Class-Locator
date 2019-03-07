@@ -109,6 +109,11 @@
     .selectize-dropdown-content>.option {
       padding: 5px 15px 5px 15px;
     }
+    
+    .dropdown-empty-message {
+      padding: 5px 15px 10px 15px;
+      max-width: 100%;
+    }
 
     /* Max Height Dropdown */
     .selectize-dropdown,
@@ -156,7 +161,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
   <script src="js/selectize-plugin-clear.js"></script>
-
+  
   <script>
     function debounce(wait, func, immediate) {
       var timeout;
@@ -450,21 +455,23 @@
                 "sections": [],
                 "classrooms": []
               }
-
-              this.currentResults.items.slice(0, this.settings.maxOptions).forEach(function(item) {
-                var type = item.id.split("-")[0];
-                var index = parseInt(item.id.split("-")[1]);
-                if (type === "buildings") {
-                  filtered.buildings.push(buildings.features[index]);
-                } else if (type === "sections") {
-                  filtered.sections.push(sections.features[index]);
-                } else if (type === "classrooms") {
-                  filtered.classrooms.push(classrooms.features[index]);
-                }
-              });
-
+              
               clearMap();
-              displayFilteredMap(filtered);
+              var results = this.currentResults.items.slice(0, this.settings.maxOptions);
+              if(results.length) {
+                results.forEach(function(item) {
+                  var type = item.id.split("-")[0];
+                  var index = parseInt(item.id.split("-")[1]);
+                  if (type === "buildings") {
+                    filtered.buildings.push(buildings.features[index]);
+                  } else if (type === "sections") {
+                    filtered.sections.push(sections.features[index]);
+                  } else if (type === "classrooms") {
+                    filtered.classrooms.push(classrooms.features[index]);
+                  }
+                });
+                displayFilteredMap(filtered);
+              }
 
             },
             onChange: function(id) {
