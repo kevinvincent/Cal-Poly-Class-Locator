@@ -35,6 +35,10 @@
       height: 100%;
       width: 100%;
     }
+    
+    .marker {
+      cursor: pointer;
+    }
 
     .mapboxgl-popup-content {
       border-radius: 10px;
@@ -303,55 +307,13 @@
               'fill-extrusion-opacity': .6
             }
           }, labelLayerId);
-
-          map.addLayer({
-            "id": "sections",
-            "type": "symbol",
-            "interactive": true,
-            "source": {
-              "type": "geojson",
-              "data": sections
-            },
-            "layout": {
-              "icon-image": "custom-marker",
-              "icon-allow-overlap": true
-            }
-          });
-
-          map.addLayer({
-            "id": "buildings",
-            "type": "symbol",
-            "interactive": true,
-            "source": {
-              "type": "geojson",
-              "data": buildings
-            },
-            "layout": {
-              "icon-image": "custom-marker",
-              "icon-allow-overlap": true
-            }
-          });
           
-          map.addLayer({
-            "id": "classrooms",
-            "type": "symbol",
-            "interactive": true,
-            "source": {
-              "type": "geojson",
-              "data": classrooms
-            },
-            "layout": {
-              "icon-image": "custom-marker",
-              "icon-allow-overlap": true
-            }
-          });
-          
-          clearMap();
+          var displayedMarkers = []
         
           var lastPopup = null;
 
           function showDescriptionPopup(feature) {
-            var coordinates = feature.geometry.coordinates.slice();
+            var coordinates = feature.geometry.coordinates;
             var description = getDescription(feature);
             
             if (lastPopup) {
@@ -362,45 +324,50 @@
               .setLngLat(coordinates)
               .setHTML(description)
               .addTo(map);
-              
+          }
+          
+          function displayFeatureMarker(feature) {
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url(img/marker.png)';
+            el.style.height = "26px";
+            el.style.width = "26px";
+        
+            el.addEventListener('click', function(e) {
+                map.flyTo({ center: feature.geometry.coordinates });
+                showDescriptionPopup(feature);
+                e.stopPropagation();
+            });
+        
+            displayedMarkers.push(new mapboxgl.Marker(el)
+                                              .setLngLat(feature.geometry.coordinates)
+                                              .addTo(map));
           }
           
           function clearMap() {
-            map.setFilter('sections', ['match', ['get', 'classNumber'], ["NULL"], true, false]);
-            map.setFilter('buildings', ['match', ['get', 'ref'], ["NULL"], true, false]);
-            map.setFilter('classrooms', ['match', ['get', 'roomRef'], ["NULL"], true, false]);
+            displayedMarkers.forEach(function(marker){
+              marker.remove();
+            })
           }
 
           function displayFilteredMap(filtered) {
             
-            // Set the filter to populate features into the layer.
-            var classNumberFilter = filtered.sections.map(function(feature) {
-              return feature.properties.classNumber;
-            });
-            map.setFilter('sections', ['match', ['get', 'classNumber'], classNumberFilter.length != 0 ? classNumberFilter : ["NULL"], true, false]);
-
-            // Set the filter to populate features into the layer.
-            var buildingRefFilter = filtered.buildings.map(function(feature) {
-              return feature.properties.ref;
-            });
-            map.setFilter('buildings', ['match', ['get', 'ref'], buildingRefFilter.length != 0 ? buildingRefFilter : ["NULL"], true, false]);
-            
-            // Set the filter to populate features into the layer.
-            var roomRefFilter = filtered.classrooms.map(function(feature) {
-              return feature.properties.roomRef;
-            });
-            map.setFilter('classrooms', ['match', ['get', 'roomRef'], roomRefFilter.length != 0 ? roomRefFilter : ["NULL"], true, false]);
-
             // Update map bounds
             var bounds = new mapboxgl.LngLatBounds();
+            
             filtered.sections.forEach(function(feature) {
               bounds.extend(feature.geometry.coordinates);
+              displayFeatureMarker(feature);
             });
+            
             filtered.buildings.forEach(function(feature) {
               bounds.extend(feature.geometry.coordinates);
+              displayFeatureMarker(feature);
             });
+            
             filtered.classrooms.forEach(function(feature) {
               bounds.extend(feature.geometry.coordinates);
+              displayFeatureMarker(feature);
             });
 
             if (lastPopup) {
@@ -412,31 +379,6 @@
               showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
             }
           }
-
-          map.on('click', 'sections', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-            showDescriptionPopup(e.features[0]);
-          });
-
-          map.on('click', 'buildings', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-            showDescriptionPopup(e.features[0]);
-          });
-          
-          map.on('click', 'classrooms', function(e) {
-            map.flyTo({ center: e.features[0].geometry.coordinates });
-            showDescriptionPopup(e.features[0]);
-          });
-
-          // Change the cursor to a pointer when the mouse is over the sections layer.
-          map.on('mouseenter', 'sections', function() {
-            map.getCanvas().style.cursor = 'pointer';
-          });
-
-          // Change it back to a pointer when it leaves.
-          map.on('mouseleave', 'sections', function() {
-            map.getCanvas().style.cursor = '';
-          });
 
           var selectData = $.map(sections.features, function(obj, index) {
             return {
@@ -498,7 +440,7 @@
               }
             },
             maxOptions: 30,
-            onType: debounce(500, function(text) {
+            onType: function(text) {
               
               if (lastPopup) {
                 lastPopup.remove();
@@ -524,8 +466,8 @@
 
               displayFilteredMap(filtered);
 
-            }),
-            onChange: debounce(500, function(id) {
+            },
+            onChange: function(id) {
       
               if(id) {
 
@@ -558,12 +500,12 @@
                 
                 $("#filter-input-selectized").prop('disabled', false);
 
-                clearMap()
+                clearMap();
                 if (lastPopup) {
                   lastPopup.remove();
                 }
               }
-            })
+            }
           });
         });
       });
