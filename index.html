@@ -156,7 +156,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
   <script src="js/selectize-plugin-clear.js"></script>
-  <script src="js/selectize-plugin-preserve-search.js"></script>
 
   <script>
     function debounce(wait, func, immediate) {
@@ -286,7 +285,7 @@
             'source-layer': 'building',
             'filter': ['==', 'extrude', 'true'],
             'type': 'fill-extrusion',
-            'minzoom': 15,
+            'minzoom': 10,
             'paint': {
               'fill-extrusion-color': '#aaa',
 
@@ -464,6 +463,7 @@
                 }
               });
 
+              clearMap();
               displayFilteredMap(filtered);
 
             },
@@ -472,7 +472,7 @@
               if(id) {
 
                 $("#filter-input-selectized").prop('disabled', true);
-                
+
                 clearMap();
                 if (lastPopup) {
                   lastPopup.remove();
