@@ -503,11 +503,11 @@
             var id = tokenizedPath[2];
             
             if (type === "buildings") {
-              selectize.setValue(type+"-"+buildings.map((f) => f.properties.id).indexOf(id), false);
+              selectize.setValue(type+"-"+buildings.features.map((f) => f.properties.id).indexOf(id), false);
             } else if (type === "sections") {
-              selectize.setValue(type+"-"+sections.map((f) => f.properties.classNumber).indexOf(id), false);
+              selectize.setValue(type+"-"+sections.features.map((f) => f.properties.classNumber).indexOf(id), false);
             } else if (type === "classrooms") {
-              selectize.setValue(type+"-"+classrooms.map((f) => f.properties.roomRef).indexOf(id), false);
+              selectize.setValue(type+"-"+classrooms.features.map((f) => f.properties.roomRef).indexOf(id), false);
             }
             
           } else {
