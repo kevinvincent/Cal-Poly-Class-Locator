@@ -271,262 +271,253 @@
         zoom: 15
       });
 
-      map.loadImage("/img/marker.png", function(error, image) {
-        map.addImage("custom-marker", image);
+      map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+      
+      map.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true
+        },
+        trackUserLocation: true
+      }), "bottom-right");
 
-        map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+      map.on('load', function() {
         
-        map.addControl(new mapboxgl.GeolocateControl({
-          positionOptions: {
-            enableHighAccuracy: true
-          },
-          trackUserLocation: true
-        }), "bottom-right");
+        var displayedMarkers = []
+      
+        var lastPopup = null;
 
-        map.on('load', function() {
+        function showDescriptionPopup(feature) {
+          setFeatureLink(feature);
           
-          var displayedMarkers = []
-        
-          var lastPopup = null;
-
-          function showDescriptionPopup(feature) {
-            setFeatureLink(feature);
-            
-            var coordinates = feature.geometry.coordinates;
-            var description = getDescription(feature);
-            
-            if (lastPopup) {
-              lastPopup.remove();
-            }
-            
-            lastPopup = new mapboxgl.Popup({ offset: [0, -10], className: "animated fadeIn"})
-              .setLngLat(coordinates)
-              .setHTML(description)
-              .addTo(map);
+          var coordinates = feature.geometry.coordinates;
+          var description = getDescription(feature);
+          
+          if (lastPopup) {
+            lastPopup.remove();
           }
           
-          function displayFeatureMarker(feature) {
-            var el = document.createElement('div');
-            el.className = 'marker';
-            el.style.backgroundImage = 'url(img/marker.png)';
-            el.style.height = "26px";
-            el.style.width = "26px";
+          lastPopup = new mapboxgl.Popup({ offset: [0, -10], className: "animated fadeIn"})
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+        }
         
-            el.addEventListener('click', function(e) {
-                map.flyTo({ center: feature.geometry.coordinates });
-                showDescriptionPopup(feature);
-                e.stopPropagation();
-            });
+        function displayFeatureMarker(feature) {
+          var el = document.createElement('div');
+          el.className = 'marker';
+          el.style.backgroundImage = 'url(/img/marker.png)';
+          el.style.height = "26px";
+          el.style.width = "26px";
+      
+          el.addEventListener('click', function(e) {
+              map.flyTo({ center: feature.geometry.coordinates });
+              showDescriptionPopup(feature);
+              e.stopPropagation();
+          });
+      
+          displayedMarkers.push(new mapboxgl.Marker(el)
+                                            .setLngLat(feature.geometry.coordinates)
+                                            .addTo(map));
+        }
         
-            displayedMarkers.push(new mapboxgl.Marker(el)
-                                              .setLngLat(feature.geometry.coordinates)
-                                              .addTo(map));
-          }
+        function clearMap() {
+          displayedMarkers.forEach(function(marker){
+            marker.remove();
+          })
+        }
+
+        function displayFilteredMap(filtered) {
           
-          function clearMap() {
-            displayedMarkers.forEach(function(marker){
-              marker.remove();
-            })
-          }
-
-          function displayFilteredMap(filtered) {
-            
-            // Update map bounds
-            var bounds = new mapboxgl.LngLatBounds();
-            
-            filtered.sections.forEach(function(feature) {
-              bounds.extend(feature.geometry.coordinates);
-              displayFeatureMarker(feature);
-            });
-            
-            filtered.buildings.forEach(function(feature) {
-              bounds.extend(feature.geometry.coordinates);
-              displayFeatureMarker(feature);
-            });
-            
-            filtered.classrooms.forEach(function(feature) {
-              bounds.extend(feature.geometry.coordinates);
-              displayFeatureMarker(feature);
-            });
-
-            if (lastPopup) {
-              lastPopup.remove();
-            }
-            map.fitBounds(bounds, { maxZoom: 17, padding: 100 });
-
-            if (filtered.sections.length + filtered.buildings.length + filtered.classrooms.length === 1) {
-              showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
-            }
-          }
-
-          var selectData = $.map(sections.features, function(obj, index) {
-            return {
-              type: "sections",
-              name: getItemName(obj),
-              subname: getItemSubname(obj),
-              id: "sections-" + index
-            }
+          // Update map bounds
+          var bounds = new mapboxgl.LngLatBounds();
+          
+          filtered.sections.forEach(function(feature) {
+            bounds.extend(feature.geometry.coordinates);
+            displayFeatureMarker(feature);
+          });
+          
+          filtered.buildings.forEach(function(feature) {
+            bounds.extend(feature.geometry.coordinates);
+            displayFeatureMarker(feature);
+          });
+          
+          filtered.classrooms.forEach(function(feature) {
+            bounds.extend(feature.geometry.coordinates);
+            displayFeatureMarker(feature);
           });
 
-          selectData = selectData.concat($.map(buildings.features, function(obj, index) {
-            return {
-              type: "buildings",
-              name: getItemName(obj),
-              subname: getItemSubname(obj),
-              id: "buildings-" + index
-            }
-          }))
-          
-          selectData = selectData.concat($.map(classrooms.features, function(obj, index) {
-            return {
-              type: "classrooms",
-              name: getItemName(obj),
-              subname: getItemSubname(obj),
-              id: "classrooms-" + index
-            }
-          }))
+          if (lastPopup) {
+            lastPopup.remove();
+          }
+          map.fitBounds(bounds, { maxZoom: 17, padding: 100 });
 
-          var selectize = $('#filter-input').selectize({
-            options: selectData,
-            optgroups: [
-              { $order: 2, type: 'classrooms', name: 'Classrooms' },
-              { $order: 1, type: 'buildings', name: 'Buildings' },
-              { $order: 3, type: 'sections', name: 'Sections' }
-            ],
-            valueField: 'id',
-            labelField: 'name',
-            searchField: ['name','subname'],
-            optgroupField: 'type',
-            optgroupLabelField: 'name',
-            optgroupValueField: 'type',
-            lockOptgroupOrder: true,
-            plugins: ["clear_button"],
-            render: {
-              optgroup_header: function(data, escape) {
-                return '<div class="optgroup-header">' + escape(data.name) + '</div>';
-              },
-              item: function(item, escape) {
-                  return '<div class="option">' +
-                      (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
-                      (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
-                  '</div>';
-              },
-              option: function(item, escape) {
-                  return '<div class="option">' +
-                      (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
-                      (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
-                  '</div>';
-              }
+          if (filtered.sections.length + filtered.buildings.length + filtered.classrooms.length === 1) {
+            showDescriptionPopup(filtered.sections[0] || filtered.buildings[0] || filtered.classrooms[0]);
+          }
+        }
+
+        var selectData = $.map(sections.features, function(obj, index) {
+          return {
+            type: "sections",
+            name: getItemName(obj),
+            subname: getItemSubname(obj),
+            id: "sections-" + index
+          }
+        });
+
+        selectData = selectData.concat($.map(buildings.features, function(obj, index) {
+          return {
+            type: "buildings",
+            name: getItemName(obj),
+            subname: getItemSubname(obj),
+            id: "buildings-" + index
+          }
+        }))
+        
+        selectData = selectData.concat($.map(classrooms.features, function(obj, index) {
+          return {
+            type: "classrooms",
+            name: getItemName(obj),
+            subname: getItemSubname(obj),
+            id: "classrooms-" + index
+          }
+        }))
+
+        var selectize = $('#filter-input').selectize({
+          options: selectData,
+          optgroups: [
+            { $order: 2, type: 'classrooms', name: 'Classrooms' },
+            { $order: 1, type: 'buildings', name: 'Buildings' },
+            { $order: 3, type: 'sections', name: 'Sections' }
+          ],
+          valueField: 'id',
+          labelField: 'name',
+          searchField: ['name','subname'],
+          optgroupField: 'type',
+          optgroupLabelField: 'name',
+          optgroupValueField: 'type',
+          lockOptgroupOrder: true,
+          plugins: ["clear_button"],
+          render: {
+            optgroup_header: function(data, escape) {
+              return '<div class="optgroup-header">' + escape(data.name) + '</div>';
             },
-            maxOptions: 30,
-            onType: function(text) {
-              
+            item: function(item, escape) {
+                return '<div class="option">' +
+                    (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
+                    (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
+                '</div>';
+            },
+            option: function(item, escape) {
+                return '<div class="option">' +
+                    (item.name ? '<div class="name">' + escape(item.name) + '</div>' : '') +
+                    (item.subname ? '<div class="subname"><small>' + escape(item.subname) + '</small></div>' : '') +
+                '</div>';
+            }
+          },
+          maxOptions: 30,
+          onType: function(text) {
+            
+            if (lastPopup) {
+              lastPopup.remove();
+            }
+
+            var filtered = {
+              "buildings": [],
+              "sections": [],
+              "classrooms": []
+            }
+            
+            clearMap();
+            var results = this.currentResults.items.slice(0, this.settings.maxOptions);
+            if(results.length) {
+              results.forEach(function(item) {
+                var type = item.id.split("-")[0];
+                var index = parseInt(item.id.split("-")[1]);
+                if (type === "buildings") {
+                  filtered.buildings.push(buildings.features[index]);
+                } else if (type === "sections") {
+                  filtered.sections.push(sections.features[index]);
+                } else if (type === "classrooms") {
+                  filtered.classrooms.push(classrooms.features[index]);
+                }
+              });
+              displayFilteredMap(filtered);
+            }
+
+          },
+          onChange: function(id) {
+    
+            if(id) {
+
+              $("#filter-input-selectized").prop('disabled', true);
+
+              clearMap();
               if (lastPopup) {
                 lastPopup.remove();
               }
-
+              
               var filtered = {
                 "buildings": [],
                 "sections": [],
                 "classrooms": []
               }
+
+              var type = id.split("-")[0];
+              var index = parseInt(id.split("-")[1]);
+              if (type === "buildings") {
+                filtered.buildings.push(buildings.features[index]);
+              }
+              else if (type === "sections") {
+                filtered.sections.push(sections.features[index]);
+              } else if (type === "classrooms") {
+                filtered.classrooms.push(classrooms.features[index]);
+              }
+
+              displayFilteredMap(filtered)
+            } else {
               
+              $("#filter-input-selectized").prop('disabled', false);
+
               clearMap();
-              var results = this.currentResults.items.slice(0, this.settings.maxOptions);
-              if(results.length) {
-                results.forEach(function(item) {
-                  var type = item.id.split("-")[0];
-                  var index = parseInt(item.id.split("-")[1]);
-                  if (type === "buildings") {
-                    filtered.buildings.push(buildings.features[index]);
-                  } else if (type === "sections") {
-                    filtered.sections.push(sections.features[index]);
-                  } else if (type === "classrooms") {
-                    filtered.classrooms.push(classrooms.features[index]);
-                  }
-                });
-                displayFilteredMap(filtered);
-              }
-
-            },
-            onChange: function(id) {
-      
-              if(id) {
-
-                $("#filter-input-selectized").prop('disabled', true);
-
-                clearMap();
-                if (lastPopup) {
-                  lastPopup.remove();
-                }
-                
-                var filtered = {
-                  "buildings": [],
-                  "sections": [],
-                  "classrooms": []
-                }
-  
-                var type = id.split("-")[0];
-                var index = parseInt(id.split("-")[1]);
-                if (type === "buildings") {
-                  filtered.buildings.push(buildings.features[index]);
-                }
-                else if (type === "sections") {
-                  filtered.sections.push(sections.features[index]);
-                } else if (type === "classrooms") {
-                  filtered.classrooms.push(classrooms.features[index]);
-                }
-  
-                displayFilteredMap(filtered)
-              } else {
-                
-                $("#filter-input-selectized").prop('disabled', false);
-
-                clearMap();
-                if (lastPopup) {
-                  lastPopup.remove();
-                }
+              if (lastPopup) {
+                lastPopup.remove();
               }
             }
-          })[0].selectize;;
-          
-          var tokenizedPath = window.location.pathname.split("/");
-          console.log(tokenizedPath)
-          if(tokenizedPath.length >= 3) {
-          
-            // clearMap();
-            // if (lastPopup) {
-            //   lastPopup.remove();
-            // }
+          }
+        })[0].selectize;;
+        
+        var tokenizedPath = window.location.pathname.split("/");
+        if(tokenizedPath.length >= 3) {
 
-            var type = tokenizedPath[1];
-            var id = tokenizedPath[2];
-            
-            if (type === "buildings") {
-              selectize.setValue(type+"-"+buildings.features.map((f) => f.properties.id).indexOf(id), false);
-            } else if (type === "sections") {
-              selectize.setValue(type+"-"+sections.features.map((f) => f.properties.classNumber).indexOf(id), false);
-            } else if (type === "classrooms") {
-              selectize.setValue(type+"-"+classrooms.features.map((f) => f.properties.roomRef).indexOf(id), false);
-            }
-            
-          } else {
-            map.flyTo({
-              // These options control the ending camera position: centered at
-              // the target, at zoom level 9, and north up.
-              center: [-120.661090, 35.300559],
-              zoom: 16,
-  
-              // These options control the flight curve, making it move
-              // slowly and zoom out almost completely before starting
-              // to pan.
-              speed: 0.2, // make the flying slow
-              curve: 1, // change the speed at which it zooms out
-            });
+          var type = tokenizedPath[1];
+          var id = tokenizedPath[2];
+          
+          if (type === "buildings") {
+            selectize.setValue(type+"-"+buildings.features.map((f) => f.properties.id).indexOf(id), false);
+          } else if (type === "sections") {
+            selectize.setValue(type+"-"+sections.features.map((f) => f.properties.classNumber).indexOf(id), false);
+          } else if (type === "classrooms") {
+            selectize.setValue(type+"-"+classrooms.features.map((f) => f.properties.roomRef).indexOf(id), false);
           }
           
-        });
+        } else {
+          map.flyTo({
+            // These options control the ending camera position: centered at
+            // the target, at zoom level 9, and north up.
+            center: [-120.661090, 35.300559],
+            zoom: 16,
+
+            // These options control the flight curve, making it move
+            // slowly and zoom out almost completely before starting
+            // to pan.
+            speed: 0.2, // make the flying slow
+            curve: 1, // change the speed at which it zooms out
+          });
+        }
+        
       });
+
     });
   </script>
 
