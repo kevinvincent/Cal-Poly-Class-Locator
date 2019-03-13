@@ -502,11 +502,11 @@
             var id = tokenizedPath[2];
             
             if (type === "buildings") {
-              selectize.setValue(type+"-"+buildings.findIndex((f) -> f.properties.id === id));
+              selectize.setValue(type+"-"+buildings.findIndex((f) => f.properties.id === id));
             } else if (type === "sections") {
-              selectize.setValue(type+"-"+sections.findIndex((f) -> f.properties.classNumber === id));
+              selectize.setValue(type+"-"+sections.findIndex((f) => f.properties.classNumber === id));
             } else if (type === "classrooms") {
-              selectize.setValue(type+"-"+classrooms.findIndex((f) -> f.properties.roomRef === id));
+              selectize.setValue(type+"-"+classrooms.findIndex((f) => f.properties.roomRef === id));
             }
             
           } else {
