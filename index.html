@@ -483,6 +483,8 @@
               if (lastPopup) {
                 lastPopup.remove();
               }
+              
+              history.replaceState(null, null, "");
             }
           }
         })[0].selectize;;
