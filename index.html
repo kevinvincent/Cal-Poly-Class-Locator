@@ -491,7 +491,8 @@
           });
           
           var tokenizedPath = window.location.pathname.split("/");
-          if(tokenizedPath.length > 2 && tokenizedPath.slice(-2)[0]) {
+          console.log(tokenizedPath);
+          if(tokenizedPath.length > 2) {
             console.log(tokenizedPath.slice(-2)[0],tokenizedPath.slice(-2)[1])
           }
           map.flyTo({
