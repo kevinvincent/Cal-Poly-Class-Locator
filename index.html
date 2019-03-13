@@ -491,6 +491,7 @@
           })[0].selectize;;
           
           var tokenizedPath = window.location.pathname.split("/");
+          console.log(tokenizedPath)
           if(tokenizedPath.length > 3) {
           
             // clearMap();
@@ -505,6 +506,7 @@
               selectize.setValue(type+"-"+buildings.findIndex((f) => f.properties.id === id));
             } else if (type === "sections") {
               selectize.setValue(type+"-"+sections.findIndex((f) => f.properties.classNumber === id));
+              console.log("Set selectize")
             } else if (type === "classrooms") {
               selectize.setValue(type+"-"+classrooms.findIndex((f) => f.properties.roomRef === id));
             }
