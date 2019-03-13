@@ -250,13 +250,13 @@
 
     var sections, buildings, classrooms;
     $.when(
-      $.getJSON("dataset/sections.json", function(data) {
+      $.getJSON("/dataset/sections.json", function(data) {
         sections = data;
       }),
-      $.getJSON("dataset/buildings.json", function(data) {
+      $.getJSON("/dataset/buildings.json", function(data) {
         buildings = data;
       }),
-      $.getJSON("dataset/classrooms.json", function(data) {
+      $.getJSON("/dataset/classrooms.json", function(data) {
         classrooms = data;
       })
     ).then(function() {
@@ -271,7 +271,7 @@
         zoom: 15
       });
 
-      map.loadImage("img/marker.png", function(error, image) {
+      map.loadImage("/img/marker.png", function(error, image) {
         map.addImage("custom-marker", image);
 
         map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
