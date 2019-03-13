@@ -256,7 +256,7 @@
         style: 'mapbox://styles/kevinsundar/cjt68puf75bui1fr0tfx397hw',
         center: [-120.661090, 35.300559],
         pitch: 20,
-        zoom: 16
+        zoom: 15
       });
 
       map.loadImage("img/marker.png", function(error, image) {
@@ -274,43 +274,43 @@
         map.on('load', function() {
 
           // Insert the layer beneath any symbol layer.
-          var layers = map.getStyle().layers;
+          // var layers = map.getStyle().layers;
 
-          var labelLayerId;
-          for (var i = 0; i < layers.length; i++) {
-            if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-              labelLayerId = layers[i].id;
-              break;
-            }
-          }
+          // var labelLayerId;
+          // for (var i = 0; i < layers.length; i++) {
+          //   if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+          //     labelLayerId = layers[i].id;
+          //     break;
+          //   }
+          // }
 
-          map.addLayer({
-            'id': '3d-buildings',
-            'source': 'composite',
-            'source-layer': 'building',
-            'filter': ['==', 'extrude', 'true'],
-            'type': 'fill-extrusion',
-            'minzoom': 10,
-            'paint': {
-              'fill-extrusion-color': '#aaa',
+          // map.addLayer({
+          //   'id': '3d-buildings',
+          //   'source': 'composite',
+          //   'source-layer': 'building',
+          //   'filter': ['==', 'extrude', 'true'],
+          //   'type': 'fill-extrusion',
+          //   'minzoom': 10,
+          //   'paint': {
+          //     'fill-extrusion-color': '#aaa',
 
-              // use an 'interpolate' expression to add a smooth transition effect to the
-              // buildings as the user zooms in
-              'fill-extrusion-height': [
-                "interpolate", ["linear"],
-                ["zoom"],
-                15, 0,
-                15.05, ["get", "height"]
-              ],
-              'fill-extrusion-base': [
-                "interpolate", ["linear"],
-                ["zoom"],
-                15, 0,
-                15.05, ["get", "min_height"]
-              ],
-              'fill-extrusion-opacity': .6
-            }
-          }, labelLayerId);
+          //     // use an 'interpolate' expression to add a smooth transition effect to the
+          //     // buildings as the user zooms in
+          //     'fill-extrusion-height': [
+          //       "interpolate", ["linear"],
+          //       ["zoom"],
+          //       15, 0,
+          //       15.05, ["get", "height"]
+          //     ],
+          //     'fill-extrusion-base': [
+          //       "interpolate", ["linear"],
+          //       ["zoom"],
+          //       15, 0,
+          //       15.05, ["get", "min_height"]
+          //     ],
+          //     'fill-extrusion-opacity': .6
+          //   }
+          // }, labelLayerId);
           
           var displayedMarkers = []
         
@@ -514,6 +514,20 @@
               }
             }
           });
+          
+          map.flyTo({
+            // These options control the ending camera position: centered at
+            // the target, at zoom level 9, and north up.
+            center: [-120.661090, 35.300559],
+            zoom: 16,
+
+            // These options control the flight curve, making it move
+            // slowly and zoom out almost completely before starting
+            // to pan.
+            speed: 0.2, // make the flying slow
+            curve: 1, // change the speed at which it zooms out
+          });
+          
         });
       });
     });
