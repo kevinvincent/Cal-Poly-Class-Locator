@@ -177,7 +177,19 @@
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
       };
-    };
+    }
+    
+    function setFeatureLink(feature) {
+      var url = "";
+      if (!feature.properties.type) {
+        url += ("buildings/" + feature.properties.id);
+      } else if(feature.properties.type === "sections") {
+        url += ("sections/" + feature.properties.classNumber);
+      } else if(feature.properties.type === "classrooms") {
+        url += ("classrooms/" + feature.properties.roomRef);
+      }
+      history.replaceState(null, null, url);
+    }
     
     function getItemName(feature) {
       if (!feature.properties.type) {
@@ -278,6 +290,8 @@
           var lastPopup = null;
 
           function showDescriptionPopup(feature) {
+            setFeatureLink(feature);
+            
             var coordinates = feature.geometry.coordinates;
             var description = getDescription(feature);
             
@@ -476,6 +490,10 @@
             }
           });
           
+          var tokenizedPath = window.location.pathname.split("/");
+          if(tokenizedPath.length > 2 && tokenizedPath.slice(-2)[0]) {
+            console.log(tokenizedPath.slice(-2)[0],tokenizedPath.slice(-2)[1])
+          }
           map.flyTo({
             // These options control the ending camera position: centered at
             // the target, at zoom level 9, and north up.
