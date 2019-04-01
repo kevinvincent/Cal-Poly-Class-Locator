@@ -242,7 +242,8 @@
         }
         return "<b>" + getName(feature) + "</b></br>" +
           "Building: " + feature.properties.bldgName.trim() + "<br/>" +
-          "Room: " + feature.properties.room.trim();
+          "Room: " + feature.properties.room.trim() + "<br/>" +
+          "Time: " + feature.properties.time.trim();
       } else if(feature.properties.type === "classrooms") {
         if(feature.properties.room.startsWith("0")) {
           feature.properties.room = feature.properties.room.substr(1);
