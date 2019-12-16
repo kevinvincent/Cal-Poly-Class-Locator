@@ -176,6 +176,8 @@
 
     let quarter;
 
+    console.log(manifest)
+
     //Give them the requested quarter or redirect them to latest quarter
     var tokenizedQuarterPath = window.location.pathname.split("/");
     if(tokenizedQuarterPath.length >= 2) {
@@ -189,6 +191,8 @@
       quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
       window.location.replace = `/${quarter.dir}`
     }
+
+    console.log(quarter)
 
     function debounce(wait, func, immediate) {
       var timeout;
