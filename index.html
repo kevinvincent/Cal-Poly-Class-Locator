@@ -185,11 +185,11 @@
       let quarter = manifest.find(element => element.dir == requestedQuarter);
       if(quarter == null) {
         quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
-        window.location.replace = `/${quarter.dir}`
+        window.location.href = `/${quarter.dir}`
       }
     } else {
       quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
-      window.location.replace = `/${quarter.dir}`
+      window.location.href = `/${quarter.dir}`
     }
 
     console.log(quarter)
