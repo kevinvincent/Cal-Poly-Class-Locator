@@ -169,6 +169,8 @@
   
   <script>
 
+  (async () => {
+
     let response = await fetch(`/dataset/manifest.json`);
     let manifest = await response.json()
 
@@ -544,6 +546,8 @@
       });
 
     });
+
+  })();
     
   </script>
 
