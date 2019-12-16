@@ -185,7 +185,10 @@
         quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
         window.location.replace = `/${quarter.dir}`
       }
-    } 
+    } else {
+      quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
+      window.location.replace = `/${quarter.dir}`
+    }
 
     function debounce(wait, func, immediate) {
       var timeout;
