@@ -168,6 +168,23 @@
   <script src="js/selectize-plugin-clear.js"></script>
   
   <script>
+
+    let response = await fetch(`/dataset/manifest.json`);
+    let manifest = await response.json()
+
+    let quarter;
+
+    //Give them the requested quarter or redirect them to latest quarter
+    var tokenizedQuarterPath = window.location.pathname.split("/");
+    if(tokenizedQuarterPath.length >= 2) {
+      var requestedQuarter = tokenizedQuarterPath[1]
+      let quarter = manifest.find(element => element.dir == requestedQuarter);
+      if(quarter == null) {
+        quarter = manifest.sort((a, b) => (a.updated > b.updated))[0]
+        window.location.replace = `/${quarter.dir}`
+      }
+    } 
+
     function debounce(wait, func, immediate) {
       var timeout;
       return function() {
@@ -185,7 +202,7 @@
     }
     
     function setFeatureLink(feature) {
-      var url = "/";
+      var url = "/" + quarterPath + "/";
       if (!feature.properties.type) {
         url += ("buildings/" + feature.properties.id);
       } else if(feature.properties.type === "sections") {
@@ -249,14 +266,14 @@
           feature.properties.room = feature.properties.room.substr(1);
         }
         return "<b>" + getName(feature) + "</b></br>" +
-               "Building: " + feature.properties.bldgName.trim() + "<br/>" +
-               "Room: " + feature.properties.room.trim();
+              "Building: " + feature.properties.bldgName.trim() + "<br/>" +
+              "Room: " + feature.properties.room.trim();
       }
     }
 
     var sections, buildings, classrooms;
     $.when(
-      $.getJSON("/dataset/sections.json", function(data) {
+      $.getJSON("/dataset/"+quarter.dir+"/sections.json", function(data) {
         sections = data;
       }),
       $.getJSON("/dataset/buildings.json", function(data) {
@@ -496,10 +513,10 @@
         })[0].selectize;;
         
         var tokenizedPath = window.location.pathname.split("/");
-        if(tokenizedPath.length >= 3) {
+        if(tokenizedPath.length >= 4) {
 
-          var type = tokenizedPath[1];
-          var id = tokenizedPath[2];
+          var type = tokenizedPath[2];
+          var id = tokenizedPath[3];
           
           if (type === "buildings") {
             selectize.setValue(type+"-"+buildings.features.map((f) => f.properties.id).indexOf(id), false);
@@ -527,6 +544,7 @@
       });
 
     });
+    
   </script>
 
 </body>
