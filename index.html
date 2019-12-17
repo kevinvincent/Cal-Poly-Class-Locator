@@ -207,7 +207,7 @@
     }
     
     function setFeatureLink(feature) {
-      var url = "/" + quarterPath + "/";
+      var url = "/" + quarter.dir + "/";
       if (!feature.properties.type) {
         url += ("buildings/" + feature.properties.id);
       } else if(feature.properties.type === "sections") {
