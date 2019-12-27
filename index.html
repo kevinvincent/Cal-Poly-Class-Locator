@@ -293,9 +293,9 @@
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/kevinsundar/cjt68puf75bui1fr0tfx397hw',
-        center: [-120.661090, 35.300559],
         pitch: 20,
-        zoom: 15
+        center: [-120.661090, 35.300559],
+        zoom: 16
       });
 
       map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
@@ -530,19 +530,6 @@
             selectize.setValue(type+"-"+classrooms.features.map((f) => f.properties.roomRef).indexOf(id), false);
           }
           
-        } else {
-          map.flyTo({
-            // These options control the ending camera position: centered at
-            // the target, at zoom level 9, and north up.
-            center: [-120.661090, 35.300559],
-            zoom: 16,
-
-            // These options control the flight curve, making it move
-            // slowly and zoom out almost completely before starting
-            // to pan.
-            speed: 0.2, // make the flying slow
-            curve: 1, // change the speed at which it zooms out
-          });
         }
         
       });
