@@ -203,7 +203,7 @@
     $(".dropdown-toggle").text(quarter.name)
     manifest.forEach((mQuarter) => {
       if(mQuarter.dir != quarter.dir) {
-        $(".dropdown-menu").append($("<a/>").addClass("dropdown-item").attr("href",`/${mQuarter.dir}`).text(quarter.name))
+        $(".dropdown-menu").append($("<a/>").addClass("dropdown-item").attr("href",`/${mQuarter.dir}`).text(mQuarter.name))
       }
     })
 
