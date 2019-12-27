@@ -202,7 +202,9 @@
 
     $(".dropdown-toggle").text(quarter.name)
     manifest.forEach((mQuarter) => {
-      $(".dropdown-menu").append($("<a/>").addClass("dropdown-item").attr("href",`/${mQuarter.dir}`))
+      if(mQuarter.dir != quarter.dir) {
+        $(".dropdown-menu").append($("<a/>").addClass("dropdown-item").attr("href",`/${mQuarter.dir}`).text(quarter.name))
+      }
     })
 
     function debounce(wait, func, immediate) {
